@@ -1,0 +1,26 @@
+*{
+  box-sizing: content-box;
+}
+
+h1
+{
+  font-family: cursive;
+  font-size: 40px;
+  padding-left: 20px;
+  
+}
+
+.box{
+  border:solid;
+  border-width: 100px;
+  width: 800px;
+  margin-left: 500px;
+  padding-left: 500px;
+
+}
+.box-2{
+  border: solid;
+  border-width: 100px;
+  width: 600px;
+ 
+}
