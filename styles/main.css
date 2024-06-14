@@ -28,7 +28,7 @@ div {
 
 #header {
   grid-area: header;
-  background-image: url("/img/header-img.jpg");
+  background-image: url("./img/header-img.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -36,21 +36,18 @@ div {
 #footer {
   grid-area: footer;
   background-color: black;
-  
 }
-#section{
+#section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2em;
-  grid-template-areas:
-  "article article";
+  grid-template-areas: "article article";
 }
 #main {
   grid-area: main;
-
 }
 .article img {
-max-width: 100%;
+  max-width: 100%;
 }
 #aside {
   grid-area: aside;
