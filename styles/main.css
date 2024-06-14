@@ -1,101 +1,71 @@
 * {
+  border: 1px dashed gray;
   box-sizing: border-box;
 }
 
-/* Add a gray background color with some padding */
-body  {
-  font-family: Arial;
-  padding: 10px;
-  background: #ffffff;
-}
-.line-top{
-border: 3px, solid;
-border-width: 100%;
-}
-
-
-
-
-
-/* Header/Blog Title */
-.header {
-  padding: 30px;
-
-  text-align: center;
-  background: white;
-}
-.header h2{
-font-size: 40px;
-}
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-.leftcolumn {   
-  float: left;
-  width: 50%;
+body {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "main aside"
+    "footer footer";
+  grid-template-rows: 250px 1fr 150px;
+  grid-template-columns: 1fr 20%;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  height: 100vh;
+  margin: 0;
+  max-width: 1200px;
 }
 
-/* Right column */
-.rightcolumn {
-  float: left;
-  width: 75%;
-margin-top:5px;
+header,
+footer,
+main,
+aside,
+div {
+  padding: 1.2em;
 }
 
-/* Fake image */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 10px;
-  columns: 1fr 1fr auto;
+#header {
+  grid-area: header;
+  background-image: url("/img/header-img.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
-/* Add a card effect for articles */
-.card {
-   background-color: rgb(255, 255, 255);
-   padding: 10px;
-   margin-top: 0px;
+#footer {
+  grid-area: footer;
+  background-color: black;
+  
 }
-
-/* Clear floats after the columns */
-.row:after {
-  content: "styles/IMG_1620.JPG";
-  display: table;
-  clear: both;
-
-
+#section{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2em;
+  grid-template-areas:
+  "article article";
 }
-.title-h-img{
-  height:200px;
-}
-#wang-beach  {
-  color: white;
-  padding-left: 20px;
-  padding-top: 20px;
-  font-family: 'Times New Roman';
-}
-
-.blog-info{
-  text-align: left;
-}
-.title-sml-txt{
-  color:rgb(86, 86, 92);
-
+#main {
+  grid-area: main;
 
 }
-
-
-/* Footer */
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: #ddd;
-  margin-top: 20px;
+.article img {
+max-width: 100%;
+}
+#aside {
+  grid-area: aside;
+  background-color: gray;
 }
 
-/* Responsive layout  */
-@media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {   
-    width: 100%;
-    padding: 0;
+/* Stack the layout on small devices/viewports. */
+@media all and (max-width: 575px) {
+  body {
+    grid-template-areas:
+      "header"
+      "main"
+      "nav"
+      "footer";
+    grid-template-rows: 80px 1fr 70px 1fr 70px;
+    grid-template-columns: 1fr;
   }
 }
