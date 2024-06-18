@@ -1,6 +1,8 @@
 * {
   /* border: 1px dashed red; */
   box-sizing: border-box;
+
+ 
 }
 
 #pinkyImage {
@@ -13,10 +15,9 @@
   font-size: 50px;
 }
 
-#pinkyimg::after{
-position: absolute;
+#pinkyimg::after {
+  position: absolute;
 }
-
 
 :root {
   --light-gray: rgb(214, 214, 214);

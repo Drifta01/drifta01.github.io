@@ -6,3 +6,9 @@
 "**/*.sass",
 "**/*.ts"
 ]
+
+
+<div id="pinkyImg"></div>
+
+<h1>Who Sent You!!</h1>
+<h1 id="pinky">Carls Blog</h1>
