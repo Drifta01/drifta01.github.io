@@ -17,29 +17,27 @@
     <title>Document</title>
   </head>
   <body>
-    <div id="pinkyImg">
-      <img src="/img/pinky.jpg" />
-      <h3>Who sent you</h3>
-    </div>
-    <header id="header">
-      <h1 id="pinky">Carls Blog</h1>
-      <h3>you heard it here!</h3>
-    </header>
-    <div id="top-banner">
-      <a href="https://frontendmasters.com/" target="_blank"><img src="/ads/fronendmasers.jpg" width="auto" height="140" /></a>
-      <a href="https://devacademy.co.nz/" target="_blank"><img src="/ads/horizontal_dark-text.png" width="auto" height="140" /></a>
-    </div>
-
     <div id="container">
+      <header id="header">
+        <div id="pinkyImg">
+          <img src="/img/pinky.jpg" />
+          <h3>Who sent you</h3>
+        </div>
+        <h1 id="pinky">Carls Blog</h1>
+        <h3>you heard it here!</h3>
+      </header>
+      <div id="top-banner">
+        <a href="https://frontendmasters.com/" target="_blank"><img src="/ads/fronendmasers.jpg" width="auto" height="40px" /></a>
+        <a href="https://devacademy.co.nz/" target="_blank"><img src="/ads/horizontal_dark-text.png" width="auto" height="40px" /></a>
+      </div>
+
       <main>
         <section id="section" style="width: 100%">
           <article class="article">
             <div class="card">
               <img src="img/Duplicate State.jpg" class="card-img" />
               <h3 class="card-heading">ID's and Classes</h3>
-              <div class="card-text">
-               
-              </div>
+              <div class="card-text"></div>
               <a class="card-button" href="posts/learning-plan.html">&#8486;</a>
             </div>
           </article>
@@ -51,17 +49,16 @@
               <a class="card-button" href="posts/identity-values.html">&#9775;</a>
             </div>
           </article>
-
         </section>
       </main>
       <aside class="#aside">
         <h1 class="center">Latest Posts...</h1>
         <ul id="nav-menu"></ul>
       </aside>
+
+      <footer id="footer"></footer>
+
+      <script src="./js/app.js" type="module" defer></script>
     </div>
-
-    <footer id="footer"></footer>
-
-    <script src="./js/app.js" type="module" defer></script>
   </body>
 </html>
