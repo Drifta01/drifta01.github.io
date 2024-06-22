@@ -8,38 +8,38 @@ import links from "./links.js";
 const rootUrl = window.location;
 const navMenu = document.getElementById("nav-menu");
 const targetContainer = document.getElementById("container");
-const heading = document.getElementById("pinky");
-const pinkyImg = document.getElementById("pinkyImg");
-const showPinky = () => {
-  pinkyImg.style.display = "block";
-  pinkyImg.style.visibility = "visible";
-};
+// const heading = document.getElementById("pinky");
+// const pinkyImg = document.getElementById("pinkyImg");
+// const showPinky = () => {
+//   pinkyImg.style.display = "block";
+//   pinkyImg.style.visibility = "visible";
+// };
 
-let counter = 5;
-let pinkyInterval = null;
-let pinkyTimeout = null;
-let gotMe = false;
+// let counter = 5;
+// let pinkyInterval = null;
+// let pinkyTimeout = null;
+// let gotMe = false;
 
-const handlePinky = (action) => {
-  const reset = () => {
-    counter = 5;
-    clearInterval(pinkyInterval);
-    pinkyInterval = null;
-    clearTimeout(pinkyTimeout);
-    pinkyTimeout = null;
-  };
+// const handlePinky = (action) => {
+//   const reset = () => {
+//     counter = 5;
+//     clearInterval(pinkyInterval);
+//     pinkyInterval = null;
+//     clearTimeout(pinkyTimeout);
+//     pinkyTimeout = null;
+//   };
 
-  if (action === "start") {
-    pinkyTimeout = setTimeout(() => {
-      gotMe = true;
-      showPinky();
-      reset();
-    }, 30000);
-  }
-};
+//   if (action === "start") {
+//     pinkyTimeout = setTimeout(() => {
+//       gotMe = true;
+//       showPinky();
+//       reset();
+//     }, 30000);
+//   }
+// };
 
-heading.addEventListener("mouseover", () => handlePinky("start"));
-heading.addEventListener("mouseout", () => handlePinky("stop"));
+// heading.addEventListener("mouseover", () => handlePinky("start"));
+// heading.addEventListener("mouseout", () => handlePinky("stop"));
 
 /// links
 

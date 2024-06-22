@@ -17,30 +17,22 @@
     <title>Document</title>
   </head>
   <body>
-    <div id="pinkyImg">
-      <img src="/img/pinky.jpg" />
-      <h3>Who sent you</h3>
-    </div>
-    <header id="header">
-      <h1 id="pinky">Carls Blog</h1>
-      <h3>you heard it here!</h3>
-    </header>
-    <div id="top-banner">
-      <a href="https://frontendmasters.com/" target="_blank"><img src="/ads/fronendmasers.jpg" width="auto" height="140" /></a>
-      <a href="https://devacademy.co.nz/" target="_blank"><img src="/ads/horizontal_dark-text.png" width="auto" height="140" /></a>
-    </div>
-
     <div id="container">
-      <main>
+      <header id="header">
+        <h1>Carls Blog</h1>
+        <h3>you heard it here!</h3>
+      </header>
+      <div id="top-banner">
+        <a href="https://frontendmasters.com/" target="_blank"><img src="/ads/fronendmasers.jpg" width="auto" height="140" /></a>
+        <a href="https://devacademy.co.nz/" target="_blank"><img src="/ads/horizontal_dark-text.png" width="auto" height="140" /></a>
+      </div>
+      <main id="main">
         <section id="section" style="width: 100%">
           <article class="article">
             <div class="card">
               <img src="img/Duplicate State.jpg" class="card-img" />
               <h3 class="card-heading">ID's and Classes</h3>
-              <div class="card-text">
-                Definition: A class is an attribute used to define one or more elements with the same style or behavior. It is prefixed with
-                a dot (.) in CSS.
-              </div>
+              <div class="card-text"></div>
               <a class="card-button" href="posts/learning-plan.html">&#8486;</a>
             </div>
           </article>
@@ -48,32 +40,25 @@
             <div class="card">
               <img src="img/identity9.jpg" class="card-img" />
               <h3 class="card-heading">Identity Values Reflections</h3>
-              <div class="card-text">
-                Definition: A class is an attribute used to define one or more elements with the same style or behavior. It is prefixed with
-                a dot (.) in CSS.
-              </div>
+              <div class="card-text"></div>
               <a class="card-button" href="posts/identity-values.html">&#9775;</a>
             </div>
           </article>
-          <article class="article"><zero-md src="./posts/md/class.md"></zero-md></article>
+          <!-- <article class="article"><zero-md src="./posts/md/class.md"></zero-md></article> -->
         </section>
       </main>
       <aside class="#aside">
         <h1 class="center">Latest Posts...</h1>
         <ul id="nav-menu"></ul>
       </aside>
+
+      <footer id="footer">
+        <div style="max-height: 150px">
+          <img src="./img/te-maari.jpg" style="object-fit: contain; max-height: 150px" />
+        </div>
+      </footer>
+
+      <script src="./js/app.js" type="module" defer></script>
     </div>
-
-    <footer id="footer">
-      <!-- <div>
-        <img src="./img/te-maari.jpg" class="side-img" />
-
-        <ul class="side-menu">
-          <li><a href="./te-houtaewa.html">Te Houtaewa</a></li>
-        </ul>
-      </div> -->
-    </footer>
-
-    <script src="./js/app.js" type="module" defer></script>
   </body>
 </html>

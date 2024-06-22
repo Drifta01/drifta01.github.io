@@ -13,10 +13,9 @@
   font-size: 50px;
 }
 
-#pinkyimg::after{
-position: absolute;
+#pinkyimg::after {
+  position: absolute;
 }
-
 
 :root {
   --light-gray: rgb(214, 214, 214);
@@ -41,6 +40,7 @@ html {
 }
 
 #header {
+  grid-area: header;
   display: flex;
   flex-direction: column;
   background: linear-gradient(190deg, #1f1f1fec 0%, rgba(121, 3, 121, 0.955) 70%), url(https://grainy-gradients.vercel.app/noise.svg);
@@ -84,6 +84,7 @@ html {
 }
 
 #top-banner {
+  grid-area: top-banner;
   text-align: center;
   display: block;
   display: flex;
@@ -107,13 +108,17 @@ html {
   font-weight: 500;
   font-family: Raleway;
   display: grid;
-  grid-template-areas: "main aside";
   grid-template-rows: auto;
   grid-template-columns: 1fr 22%;
   max-width: 1200px;
+  grid-template-areas:
+    "header header"
+    "top-banner top-banner"
+    "main aside"
+    "footer footer";
 }
 
-main {
+#main {
   grid-area: main;
   min-height: 100%;
   border-left: 1px solid var(--light-gray);
@@ -211,9 +216,11 @@ aside {
 }
 
 #footer {
+  grid-area: footer;
   min-height: 150px;
   height: 150px;
   background-color: #eaeaea;
+  max-height: 150px;
 }
 
 @media all and (max-width: 800px) {
