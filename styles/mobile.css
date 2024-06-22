@@ -11,6 +11,10 @@
     grid-template-rows: auto;
     grid-template-columns: 1fr;
     /* justify-items: center; */
+    justify-items: end;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    justify-items: center;
   }
 
   main {
