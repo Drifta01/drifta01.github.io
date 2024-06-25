@@ -24,7 +24,7 @@
   cursor: pointer;
   filter: brightness(1);
   transition-property: all;
-  transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out ;
   transition-duration: 300ms;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
