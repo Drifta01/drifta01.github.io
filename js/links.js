@@ -1,14 +1,14 @@
 const links = [
   {
     title: "identity",
-    fileName: "identity-values.html",
+    fileName: "posts/identity-values.html",
     type: "html",
     order: 3,
     linkText: "values",
   },
   {
     title: "learning",
-    fileName: "posts/learning-plan.html",
+    fileName: "",
     type: "html",
     order: 2,
     linkText: "tech stuff",
@@ -16,16 +16,16 @@ const links = [
   {
     title: "classes",
     fileName: "posts/md/classes.md",
-    type: "html",
+    type: "md",
     order: 2,
-    linkText: "css classes & ids",
+    linkText: "classes & ids",
   },
   {
     title: "te houtaewa",
     fileName: "posts/te-houtaewa.html",
     type: "html",
     order: 1,
-    linkText: "blog page",
+    linkText: "te-houtaewa",
   },
   {
     title: "index",

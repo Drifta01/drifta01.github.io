@@ -30,27 +30,38 @@ async function readDirectoryAndOutputHTML(owner, repo, path) {
   }
 }
 
-function getPost(fileName, type) {
-  const postSrc = `${fileName}`;
-
+function getPost(file) {
+  const postSrc = `${file}`;
   const postContentWrapper = document.getElementById("zd-wrapper");
   const postContent = document.getElementById("zd-content");
   const section = document.getElementById("section");
-  const loader = document.getElementById("loader-wrapper");
+  const iframe = document.getElementById("iframe"); // const loader = document.getElementById("loader-wrapper");
 
-  loader.classList.remove("hide");
-  postContentWrapper.classList.add("hide");
-  postContent.src = "";
+  // loader.classList.remove("hide");
+  // postContentWrapper.classList.add("hide");
 
-  if (fileName === "index.html") {
+  console.log(file);
+
+  if (file.fileName === "index.html") {
+    iframe.classList.add("hide");
+    postContentWrapper.classList.add("hide");
     section.classList.remove("hide");
-  } else {
+    return;
+  }
+
+  if (file.type === "html") {
     section.classList.add("hide");
-    setTimeout(() => {
-      postContent.src = postSrc;
-      postContentWrapper.classList.remove("hide");
-      loader.classList.add("hide");
-    }, 2000);
+    iframe.classList.remove("hide");
+    postContentWrapper.classList.add("hide");
+
+    iframe.src = file.fileName;
+  }
+  if (file.type === "md") {
+    section.classList.add("hide");
+    iframe.classList.add("hide");
+    postContentWrapper.classList.remove("hide");
+      postContent.src = file.fileName;
+
   }
 }
 

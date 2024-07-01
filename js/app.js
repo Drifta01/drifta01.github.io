@@ -16,7 +16,7 @@ links
     const navItem = `<a href="${window.location}${link.fileName}">${link.linkText}</a>`;
 
     const navItemEl = document.createElement("li");
-    navItemEl.addEventListener("click", (e) => handleClick(e, link.fileName));
+    navItemEl.addEventListener("click", (e) => handleClick(e, link));
     navItemEl.classList.add("menu-item");
     navItemEl.innerHTML = navItem;
     navMenu.appendChild(navItemEl);
