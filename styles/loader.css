@@ -3,9 +3,9 @@
   height: 100%;
   display: flex;
   justify-content: center;
-  background-color: black;
+  background-color: rgb(110, 110, 110);
   align-items: center;
-  opacity: 0.6;
+  opacity: 0.5;
   position: absolute;
   /* display: none; */
 
@@ -17,24 +17,24 @@
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background: #ff3d00;
+  background: #21f700;
   position: absolute;
 }
 .loader::before,
 .loader:after {
-  content: "";
+  content: "WAITING";
   position: absolute;
   border-radius: 50%;
   inset: 0;
-  background: #fff;
+  background: #ffffff;
   transform: rotate(0deg) translate(30px);
   animation: rotate 1s ease infinite;
 }
 .loader:after {
-  animation-delay: 0.5s;
+  animation-delay: .5s;
 }
 @keyframes rotate {
   100% {
-    transform: rotate(360deg) translate(30px);
+    /* transform: rotate(360deg) translate(30px); */
   }
-}
+/* } */
