@@ -106,7 +106,7 @@ html {
 }
 #iframe {
   grid-area: iframe;
-  
+
   border-width: 2px;
   border-color: #070707;
   width: 100%;
@@ -267,6 +267,8 @@ aside {
 }
 #te-body {
   background-color: #c1c3c6;
-  border: solid;
-  border-width: 10px;
+
+  max-height: 100%;
 }
+
+

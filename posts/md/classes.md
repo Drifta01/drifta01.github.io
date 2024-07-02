@@ -1,5 +1,5 @@
 
-<style>*{box-sizing: content; padding-left:30px; padding-right:30px; font-family:Montserrat; font-size: 20px; font-weight: bold;}</style>
+<style>*{padding-left:30px; padding-right:30px; font-family:Montserrat; font-size: 20px; font-weight: bold;}</style>
 
 
 

@@ -3,15 +3,15 @@ const links = [
     title: "identity",
     fileName: "posts/identity-values.html",
     type: "html",
-    order: 3,
+    order: 4,
     linkText: "values",
   },
   {
-    title: "learning",
-    fileName: "",
+    title: "java cafe",
+    fileName: "posts/java-cafe.html",
     type: "html",
-    order: 2,
-    linkText: "tech stuff",
+    order: 3,
+    linkText: "Javascript Cafe",
   },
   {
     title: "classes",
@@ -33,6 +33,20 @@ const links = [
     type: "html",
     order: 0,
     linkText: "home",
+  },
+  {
+    title: "Problem Solving",
+    fileName: "posts/problem-solving.html",
+    type: "html",
+    order: 5,
+    linkText: "Problem Solving",
+  },
+  {
+    title: "DOM",
+    fileName: "posts/dom.html",
+    type: "html",
+    order: 6,
+    linkText: "The DOM",
   },
 ];
 
