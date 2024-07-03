@@ -1,10 +1,10 @@
 const links = [
   {
     title: "identity",
-    fileName: "posts/identity-values.html",
+    fileName: "posts/learning-plan.html",
     type: "html",
     order: 4,
-    linkText: "values",
+    linkText: "Learning Plan/values",
   },
   {
     title: "java cafe",

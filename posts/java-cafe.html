@@ -1,105 +1,39 @@
 ﻿<!DOCTYPE html>
 <html>
-
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
     <title>JavaScript Cafe</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
-    <link href="main.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet" />
+    <link href="/styles/java-cafe.css" rel="stylesheet" type="text/css" />
   </head>
-<style>*body {
-  background: rgb(0, 0, 0);
-  background-image: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.5)  30%,
-      transparent 0
-    ),
-    linear-gradient(rgba(255, 255, 255, 0) 10%, black);
-  background-size: 50% 50%;
-  font-family: cursive;
-  text-align: center;
-  max-width:100%;
-  max-height: 100%;
-}
 
-p {
-  font-size: 3vw;
-  font-weight: 300;
-}
+  <body id="java-div">
+    <div>
+      <header>JavaScript Cafe</header>
 
-h1 {
-  font-size: 6vw;
-  font-weight: 700;
-  color: rgb(220, 182, 67);
-}
+      <div class="container">
+        <a href="/index.html" id="blog-button"><img src="/img/47383.jpg" /></a>
+        <p id="whiteCoffee">white Coffee</p>
+        <p id="blackCoffee">black Coffee</p>
+        <p id="sandwich">sandwich</p>
+        <p id="muffin">muffin</p>
+        <p id="eggs">eggs</p>
 
-.container {
-  background-color: rgb(220, 182, 67);
-  border: 3px solid rgb(0, 0, 0);
-  border-radius: 25px;
-  width: 100%;
-  height:100%;
-  padding: 5px 5px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 50px;
+        <p class="customer-Order" id="customerOrder"></p>
 
-  backdrop-filter: blur(11.7px);
-  -webkit-backdrop-filter-box-shadow: 3px 3px 3px blur(11.7px);
-   box-shadow: 3px 3px 3px;
-}
-
-.button {
-  font-family: "Fira Code", monospace;
-  font-size: 1.5vw;
-  font-weight: 500;
-  display: inline-block;
-  outline: 0;
-  cursor: pointer;
-  border: 3px solid rgb(210, 206, 177);
-  border-radius: 3px;
-  color: rgb(0, 0, 0);
-  background: rgba(237, 236, 222, 0.804);
-  padding: 12px 20px;
-  text-align: center;
-  transition-duration: 0.45s;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1) ;
-
-}
-
-button:hover {
-  color: black;
-  background-color: rgb(220, 182, 67);
-  backdrop-filter: blur(11.7px);
-  -webkit-backdrop-filter: blur(11.7px);
-}
-</style>
-  <body>
-    <h1>JavaScript Cafe</h1>
-    <div class="container">
-      <p id="whiteCoffee">white Coffee</p>
-      <p id="blackCoffee"></p>
-      <p id="sandwich"></p>
-      <p id="muffin"></p>
-      <p id="eggs"></p>
-
-      <p class="customer-border" id="customerOrder"></p>
-
-      <p id="cash">Cash</p>
+        <p id="cash">Cash</p>
+      </div>
+      <button class="button" id="customerButton">generate customer</button>
+      <button class="button" id="fillOrder">fill order</button>
+      <button class="button" id="whiteCoffeeOrderButton">white Coffee</button>
+      <button class="button" id="blackCoffeeorderButton">black Coffee</button>
+      <button class="button" id="sandWichOrderButton">sandwich</button>
+      <button class="button" id="muffinOrderButton">muffin</button>
+      <button class="button" id="eggsOrderButton">eggs</button>
     </div>
-    <button class="button" id="customerButton">generate customer</button>
-    <button class="button" id="fillOrder">fill order</button>
-    <button class="button" id="whiteCoffeeOrderButton">white Coffee</button>
-    <button class="button" id="blackCoffeeorderButton">black Coffee</button>
-    <button class="button" id="sandWichOrderButton">sandwich</button>
-    <button class="button" id="muffinOrderButton">muffin</button>
-    <button class="button" id="eggsOrderButton">eggs</button>
-
   </body>
   <script src="cafe.js"></script>
-
 </html>

@@ -78,7 +78,7 @@ function generateCustomerOrder() {
 // DECLARING FUNCTION FOR DISPLAYING CUSTOMER ORDER //
 //converts the customer orders array into a string so we can display it //
 function displayCustomerOrder() {
-  document.getElementById("customerOrder").innerHTML = "Customer order: " + customer.order;
+  document.getElementById("customerOrder").innerHTML = "Customer Order: " + customer.order;
 }
 document.getElementById("customerButton").onclick = generateCustomerOrder;
 
@@ -98,7 +98,7 @@ function fillOrder() {
   // if we dont have it alert were out of product //
   // add the sale total to our cash //
   // display the new totals//
-  // document.getElementById("fillOrder").innerHTML = "fillOrder : " + fill.Order
+  
 
   let saleTotal = 0;
   for (let i = 0; i < customer.order.length; i++) {
@@ -122,6 +122,7 @@ function fillOrder() {
 }
 
 document.getElementById("fillOrder").onclick = fillOrder;
+
 
 // decrease our stock of the product //
 // add the cost of the product to our sale total //
