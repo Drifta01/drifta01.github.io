@@ -9,8 +9,8 @@
       "header"
       "aside"
       "top-banner"
-      "main";
-      /* "footer"; */
+      "main"
+      "footer";
     grid-template-rows: 1fr auto;
     grid-template-columns: 1fr;
   }
