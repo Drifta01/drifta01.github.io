@@ -1,0 +1,118 @@
+
+
+      body {
+        /* border: 1px dashed gray; */
+        box-sizing: border-box;
+        background-color: beige;
+
+      }
+ body {
+        border-width: 1px;
+        border-color: rgb(0, 0, 0);
+        max-width: 100%;
+
+      }
+
+p {
+        font-family: Montseratt;
+        font-weight: bold;
+        font-size: 26px;
+
+        max-width: 1200px;
+        margin: auto;
+        color: rgb(94, 87, 87);
+      }
+
+      .std-doc {
+
+        h1,
+        h3,
+        h3 {
+          color: rgb(56, 56, 56);
+        }
+
+        u {
+        color: rgb(39, 39, 39);
+      }
+
+h1 {
+        font-family: Montseratt;
+        font-size: 4rem;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 2rem;
+      }
+h3 {
+        color: black;
+        font-size: 28px;
+        font-family: Cormorant;
+        text-align: justify;
+      }
+
+h5 {
+        font-size: 20px;
+        padding-left: 30px;
+        margin-bottom: 1px;
+      }
+
+form {
+
+        border: solid rgb(60, 58, 58) 15px;
+        border-style: groove;
+        margin-inline: 10px;
+        padding-right: 20px;
+
+      }
+h4 {
+        color: rgb(49, 49, 49);
+        font-size: 24px;
+        font-family: Cormorant;
+        text-align: justify;
+
+        padding-left: 40px;
+      }
+
+section {
+        border: solid transparent;
+        text-align: justify;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+.card-button {
+        width: 80px;
+        border: solid 2px rgb(32, 32, 32);
+        background-color: rgb(185, 184, 184);
+        color: rgb(142, 140, 140);
+        border-radius: 5px;
+        color: rgb(172, 172, 172);
+      }
+
+img {
+        width: 100px;
+        border: 3px black;
+
+      }
+.blog-button{
+  border:solid black 10 px;
+}
+cite {
+        padding-left: 1rem;
+      }
+
+img {
+        padding-left: 20px;
+      }
+
+hr {
+        border-width: 5px;
+        border-style: solid;
+        border-color: rgb(43, 43, 43);
+        border-style: groove;
+      }
+ @media (max-width: 600px) {
+        .std-doc h1 {
+          font-size: 3rem;
+          margin-top: 1rem;
+        }
+    }}
