@@ -1,9 +1,14 @@
 
+<<<<<<< HEAD:posts/md/class.md
+
+### HTML Classes
+=======
 <style>*{padding-left:30px; padding-right:30px; font-family:Montserrat; font-size: 20px; font-weight: bold;}</style>
 
 
 
  HTML Classes
+>>>>>>> main:posts/md/classes.md
 
 **Definition**:
 A class is an attribute used to define one or more elements with the same style or behavior. It is prefixed with a dot (.) in CSS.
@@ -92,3 +97,4 @@ In this example, only the `div` with the `id` of `header` will have the styles a
 - **IDs**: Unique and specific to single elements. Ideal for distinctive styling and precise manipulation.
 
 Understanding these differences helps in organizing and maintaining clean, efficient, and scalable HTML and CSS code.
+  <article class="article"><zero-md src="./posts/md/class.md"></zero-md></article>
