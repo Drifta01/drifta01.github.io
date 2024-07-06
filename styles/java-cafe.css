@@ -69,3 +69,6 @@ button:hover {
   backdrop-filter: blur(11.7px);
   -webkit-backdrop-filter: blur(11.7px);
 }
+h2 {
+  margin-bottom: 1px;
+}

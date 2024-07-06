@@ -98,7 +98,6 @@ function fillOrder() {
   // if we dont have it alert were out of product //
   // add the sale total to our cash //
   // display the new totals//
-  
 
   let saleTotal = 0;
   for (let i = 0; i < customer.order.length; i++) {
@@ -122,7 +121,6 @@ function fillOrder() {
 }
 
 document.getElementById("fillOrder").onclick = fillOrder;
-
 
 // decrease our stock of the product //
 // add the cost of the product to our sale total //
