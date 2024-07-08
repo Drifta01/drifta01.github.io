@@ -1,7 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
 :root {
   --light-gray: rgb(214, 214, 214);
 }
@@ -11,11 +7,6 @@ body {
   margin: 0;
   padding: 0;
   color: #1f1f1f;
-  height: 100%;
-}
-
-html {
-  height: 100%;
 }
 
 .center {
@@ -236,122 +227,7 @@ aside {
 #footer {
   grid-area: footer;
   min-height: 150px;
-
   background-color: #eaeaea;
   max-height: 150px;
 }
-#te-h1l {
-  font-family: "Times New Roman";
-  font-size: 65px;
-  text-align: center;
-  border: solid black;
-  border-radius: 10px;
-  border-width: 4px;
-  margin-left: 25%;
-  margin-right: 25%;
-  box-shadow: 5px 5px 5px 2px gray;
-}
 
-.te-h2 {
-  font-family: "Times New Roman";
-  font-size: 28px;
-
-  text-align: justify;
-  padding-left: 40px;
-  padding-right: 40px;
-  margin-top: 20px;
-}
-#te-h1 {
-  padding-top: 40px;
-  font-family: "Times New Roman";
-  font-size: 36px;
-  text-align: center;
-  margin-top: 25px;
-}
-#te-body {
-  border: solid transparent;
-  background-color: #c1c3c6;
-  margin: 10px;
-  padding-left: 2%;
-
-  max-height: 100%;
-}
-
-.blog-card:hover {
-  scale: 99%;
-}
-
-.blog-card {
-  display: flex;
-  flex-direction: column;
-  border-radius: 5px;
-  border: 1px solid var(--light-gray);
-  padding-bottom: 1rem;
-  align-items: center;
-  justify-content: space-between;
-  box-shadow: 0px 0px 10px var(--light-gray);
-  transition: all;
-  transition-duration: 200ms;
-  transition-timing-function: ease-out;
-  cursor: pointer;
-  max-height: 100%;
-  border: transparent;
-  width: fit-content;
-  padding: 50px;
-}
-
-.blog-card-heading {
-  font-family: Montserrat !important;
-  font-weight: 600;
-  display: block;
-  font-size: 1.3rem;
-  margin-top: 1.5rem;
-  color: rgb(0, 0, 0);
-  padding: 0.25rem 1rem 0 1rem;
-  text-align: center;
-}
-
-.blog-card-text {
-  font-size: 1rem;
-  padding: 0rem 1.2rem 1.5rem 1rem;
-  font-weight: 400;
-  display: block;
-}
-
-.blog-card-img {
-  width: 300px;
-  mask-border-mode: alpha;
-  border-top-left-radius: 1px;
-  border-top-right-radius: 1px;
-  max-height: 300px;
-  min-height: 300px;
-  object-position: top;
-  object-fit: contain;
-}
-
-.blog-card-button {
-  line-height: 2rem;
-  border-radius: 10px;
-  padding: 0.5rem;
-  color: white;
-  border: solid;
-  border-color: #3a4a62;
-  border-width: 2px;
-  background-color: #3a4a62;
-  width: 350px;
-  font-size: 2.5rem;
-  text-decoration: none;
-  text-align: center;
-  transition: all;
-  transition-duration: 400ms;
-  transition-timing-function: ease-in-out;
-}
-
-.blog-card-button:hover {
-  filter: brightness(1);
-}
-.blog-body #button {
-  border: solid 5px rgb(65, 65, 65) 5px;
-  margin: 5px;
-  border-radius: 50px;
-}

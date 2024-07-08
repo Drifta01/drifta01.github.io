@@ -1,80 +1,79 @@
-*body {
-  box-sizing: border-box;
-
-  background: rgb(0, 0, 0);
-
-  padding-right: 20px;
-  padding-left: 20px;
-
-  font-family:'Times New Roman';
-  text-align: center;
-  max-width: 100%;
-  max-height: 100%;
+body {
+  box-sizing: border-box; /* All elements will include padding and border in their width/height */
+  background: rgb(0, 0, 0); /* Black background */
+  padding-right: 20px; /* Right padding of 20px */
+  padding-left: 20px; /* Left padding of 20px */
+  font-family: "Times New Roman"; /* Font family set to Times New Roman */
+  text-align: center; /* Center aligned text */
+  max-width: 100%; /* Maximum width is 100% of the parent element */
+  max-height: 100%; /* Maximum height is 100% of the parent element */
 }
+
 div {
-  border: solid rgb(0, 0, 0) 1px;
-  background-color: rgb(13, 13, 13);
+  border: solid rgb(0, 0, 0) 1px; /* Border is 1px solid black */
+  background-color: rgb(13, 13, 13); /* Background color is dark grey */
 }
 
 p {
-  font-family: Montserrat;
-  text-align: center;
-  font-size: 3vw;
+  font-family: Montserrat; /* Font family set to Montserrat */
+  text-align: center; /* Center aligned text */
+  font-size: 3vw; /* Font size is 3% of the viewport width */
 }
 
 header {
-  padding-top: 20px;
-  text-align: center;
-  font-size: 8vw;
-  font-weight: 500;
-  color: rgb(220, 182, 67);
+  padding-top: 20px; /* Top padding of 20px */
+  text-align: center; /* Center aligned text */
+  font-size: 8vw; /* Font size is 8% of the viewport width */
+  font-weight: 500; /* Font weight is 500 (medium) */
+  color: rgb(220, 182, 67); /* Text color is a shade of yellow */
 }
 
 .container {
-  background-color: rgb(220, 182, 67);
-  border: 3px solid rgb(0, 0, 0);
-  border-radius: 5px;
-  max-width: 100%;
-  max-height: 100%;
-  padding: 10px;
-  margin: 20px;
-
-  backdrop-filter: blur(11.7px);
-  -webkit-backdrop-filter-box-shadow: 3px 3px 3px blur(11.7px);
-  box-shadow: 3px 3px 3px;
+  background-color: rgb(220, 182, 67); /* Background color is a shade of yellow */
+  border: 3px solid rgb(0, 0, 0); /* Border is 3px solid black */
+  border-radius: 5px; /* Border radius is 5px (rounded corners) */
+  max-width: 100%; /* Maximum width is 100% of the parent element */
+  max-height: 100%; /* Maximum height is 100% of the parent element */
+  padding: 10px; /* Padding of 10px on all sides */
+  margin: 20px; /* Margin of 20px on all sides */
+  backdrop-filter: blur(11.7px); /* Apply a blur effect to the elements behind the container */
+  -webkit-backdrop-filter-box-shadow: 3px 3px 3px blur(11.7px); /* Apply a box shadow and blur effect to the elements behind the container (for Webkit browsers) */
+  box-shadow: 3px 3px 3px; /* Apply a box shadow of 3px on all sides */
 }
 
 .button {
-  font-family: Montserrat;
-  font-size: 1.5vw;
-  font-weight: 300;
-  outline: 5px;
-  cursor: pointer;
-  border: 1px solid rgb(220, 182, 67);
-  border-radius: 5px;
-  color: rgb(0, 0, 0);
-  background: rgb(195, 195, 195);
-  padding: 20px;
-  text-align: justify;
-  transition-duration: 0.45s;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-  margin-left: 2.8rem;
-  margin-bottom: 30px;
+  font-family: Montserrat; /* Font family set to Montserrat */
+  font-size: 1.5vw; /* Font size is 1.5% of the viewport width */
+  font-weight: 300; /* Font weight is 300 (light) */
+  outline: 5px; /* Outline width is 5px */
+  cursor: pointer; /* Cursor changes to a pointer when hovering over the button */
+  border: 1px solid rgb(220, 182, 67); /* Border is 1px solid yellow */
+  border-radius: 5px; /* Border radius is 5px (rounded corners) */
+  color: rgb(0, 0, 0); /* Text color is black */
+  background: rgb(195, 195, 195); /* Background color is light grey */
+  padding: 20px; /* Padding of 20px on all sides */
+  text-align: justify; /* Justified text alignment */
+  transition-duration: 0.45s; /* Transition duration is 0.45 seconds */
+  transition-property: all; /* Transition applies to all properties */
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); /* Transition timing function is a cubic bezier curve */
+  margin-left: 2.8rem; /* Left margin is 2.8rem */
+  margin-bottom: 30px; /* Bottom margin is 30px */
 }
 
 button:hover {
-  color: rgb(0, 0, 0);
-  background-color: rgb(220, 182, 67);
-  backdrop-filter: blur(11.7px);
-  -webkit-backdrop-filter: blur(11.7px);
+  color: rgb(0, 0, 0); /* Text color is black when hovering over the button */
+  background-color: rgb(220, 182, 67); /* Background color is yellow when hovering over the button */
+  backdrop-filter: blur(11.7px); /* Apply a blur effect to the elements behind the button when hovering over it */
+  -webkit-backdrop-filter: blur(
+    11.7px
+  ); /* Apply a blur effect to the elements behind the button when hovering over it (for Webkit browsers) */
 }
+
 h2 {
-  margin-bottom: 1px;
+  margin-bottom: 1px; /* Bottom margin is 1px */
 }
-.blog-button{
 
-  border: solid black 10px;
-  border-radius: 50px;
-
+.blog-button {
+  border: solid black 10px; /* Border is 10px solid black */
+  border-radius: 50px; /* Border radius is 50px (rounded corners) */
 }
