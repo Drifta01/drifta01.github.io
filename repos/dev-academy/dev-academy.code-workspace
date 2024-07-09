@@ -1,0 +1,11 @@
+{
+  "folders": [
+    {
+      "name": "dev-academy",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "liveServer.settings.port": 5501
+  }
+}

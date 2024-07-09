@@ -1,10 +1,24 @@
 const links = [
   {
+    title: "Tic Tac Toe",
+    fileName:"/blogpages/tic-tac-toe.html",
+    type: "html",
+    order: 9,
+    linkText: "tic-tac-toe.html",
+  },
+  {
+    title: "identity",
+    fileName: "/blogpages/learning-plan.html",
+    type: "html",
+    order: 8,
+    linkText: "Learning Plan/values",
+  },
+  {
     title: "reflect",
-    fileName: "posts/md/reflections-foundations",
-    type: "md",
+    fileName:"./blogpages/foundations.html",
+    type: "html",
     order: 0,
-    linkText: "reflections-foundations",
+    linkText: "reflections-foundations.html",
   },
   {
     title: "identity",
@@ -56,5 +70,7 @@ const links = [
     linkText: "The DOM",
   },
 ];
+
+
 
 export default links;
