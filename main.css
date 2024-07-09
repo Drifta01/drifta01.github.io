@@ -1,4 +1,12 @@
-body {
+@media all and (max-width: 800px) {
+}
+  * {
+    border: solid 1px transparent;
+  }
+
+
+
+*body {
   /* max-height: 100%; */
   border-width: 100%;
   border: solid rgb(227, 75, 75) 2px;

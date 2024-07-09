@@ -1,6 +1,7 @@
 // Stock Control
 let products = {
-  whiteCoffee: { stock: 5, price: 4 },
+  whiteCoffee: { stock: 5,
+     price: 4 },
   blackCoffee: { stock: 5, price: 3 },
   sandwich: { stock: 9, price: 3 },
   muffin: { stock: 2, price: 3.5 },
@@ -23,7 +24,7 @@ function displayProducts() {
 // Display Products
 function displayProducts() {
   for (const [key, value] of Object.entries(products)) {
-    document.getElementById(key).innerHTML = `${key} : ${value.stock}`;
+    document.getElementById(key).innerHTML =  value.stock;
   }
 }
 displayProducts();
@@ -51,7 +52,7 @@ function generateCustomerOrder() {
 
 // Display Customer Order
 function displayCustomerOrder() {
-  document.getElementById("customerOrder").innerHTML = `Customer order: ${customer.order.join(", ")}`;
+  document.getElementById("customerOrder").innerHTML = "Customer order: " + customer.order.join(", ");
 }
 document.getElementById("customerButton").onclick = generateCustomerOrder;
 
@@ -59,10 +60,10 @@ document.getElementById("customerButton").onclick = generateCustomerOrder;
 let cash = 0;
 
 function displayCash() {
-  document.getElementById("cash").innerHTML = `Cash: ${cash}`;
-}
-displayCash();
+  document.getElementById("cash").innerHTML = "Cash"  + cash ;
 
+displayCash();
+}
 document.getElementById("fillOrder").onclick = fillOrder;
 
 function getRandomInt(min, max) {
@@ -78,14 +79,18 @@ function fillOrder() {
       products[productName].stock--;
       saleTotal += products[productName].price;
     } else {
-      alertBox.innerHTML = `I'm sorry, we're out of ${productName}`;
+      alertBox.innerHTML = "I'm sorry, we're out of " + productName ;
+      displayAlert()
     }
   });
 
   cash += saleTotal;
   customer.order = [];
-
   displayProducts();
   displayCash();
+  displayFillOrder()
   displayCustomerOrder();
+}
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
 }
