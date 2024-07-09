@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  border: solid 1px transparent;
+  background-color: beige;
+  font-family: Raleway;
+  color: rgb(86, 13, 13);
+  margin: 10%;
+}
+header {
+  font-family: Montseratt;
+  color: black;
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 40px;
+  text-shadow: 2px 2px 2px gray;
+}
+h1 {
+  font-size: 40px;
+  font-family: Montseratt;
+}
+
+h2 {
+  font-size: 28px;
+  color: black;
+  text-shadow: 2px 2px 2px rgb(140, 140, 140);
+  font-weight: 800;
+  line-height: 1;
+}
+p {
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 800;
+}
+.button {
+  background-color: rgb(253, 247, 247);
+  border: 2px solid black;
+  
+}

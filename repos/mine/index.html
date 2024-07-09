@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Document</title>
+    </head>
+
+
+
+
+
+
+
+    <body class="body-index">
+
+        <h1>javascript-methods/array-methods.js</h1>
+        <h1>.push()</h1>
+        <hr><br>
+        When working with arrays we want to be able to add a new item into the array.
+        <br>
+        The `.push()` method is a function that has been built for us to use when we want to add an item to an
+        array.<br>
+        It returns a new array with all the elements in the array previously, plus the new addition.<br>
+
+        In this example we have an array of artworks and we want to write a function that we can call when we have a
+        new
+        artwork to add.<br>
+
+        <h3>
+            <h3>Example:</h3>
+        </h3><br> addArtwork([{name: 'Floral', value: '$179.99'}], <br>{name: 'Landscape View', value:
+        '$229.99'})<br>
+        should return [{name: 'Floral', value: '$179.99'},<br> {name: 'Landscape View', value: '$229.99'}]
+
+        const artworkList = [{<br> name: 'Floral', value: '$179.99'<br> }]<br>
+        const newArtwork = {<br>
+        name: 'Landscape View',<br>
+        value: '$229.99'
+        }<br>
+        <br>
+        function addArtwork(artworkList, newArtwork) <br>{
+        artworkList.push(newArtwork)<br>
+        artworkList.push(newArtwork)<br>
+        return artworkList
+        }
+
+        <hr>
+        <h1>.pop()</h1>
+        <hr>
+        When working with arrays we want to be able to remove the last item from the array.<br>
+        The `.pop()` method is a function that has been built for us to use when we want to remove the last
+        item from
+        the
+        <h1> array.</h1>
+        It returns a new array with all the elements in the array previously, but now without the last
+        element.
+
+        In this example we have an array of artworks and we want to write a function that we can call
+        when
+        we remove
+        the
+        lastest listing from our list of artworks.
+
+        <h3>Example:</h3> removeLastListing([{name: 'Floral', value: '$179.99'},<br> {name: 'Landscape View',
+        value:
+        '$229.99'}])
+        should return: [{name: 'Floral', value: '$179.99'}
+
+        const listings = [{ name: 'Floral', value: '$179.99' }, { name: 'Landscape View', value:
+        '$229.99'
+        }]
+
+
+        function removeLastListing(listings) {
+        listings.pop()
+        return listings
+        }
+
+        <hr>------------ Calling the functions -----------
+
+        const artworkResults = addArtwork(artworkList, newArtwork)<br><br>
+        console.log('artworkResults: ', artworkResults)<br>
+        <br>
+
+
+        const removeLastListingResults = removeLastListing(listings)<br><br>
+        console.log('removeLastListingResults: ', removeLastListingResults)
+        <hr>
+
+
+        <h1>Math.floor()</h1>
+        <hr>
+        This method returns a value that has been rounded down to the nearest
+        integer<br>
+        (i.e. round down a
+        decimal point to
+        a
+        whole number).
+        <br>
+        <h3>Example:</h3> Math.floor(2.75) should return 2
+
+
+        <br>
+        In this example we have two variables that are passed to a
+        function that will
+        round down to the
+        nearest integer.<br>
+        <br>
+        Imagine a scenario where Tane bakes 100 cookies for his 17 work
+        mates.<br>
+
+
+
+        He wants to figure out how many cookies each person can
+        have.<br>
+        (Because 17 people are not going to have 5.882352941176471
+        cookies each.
+        <br>Nobody wants to fight over crumbs, that's
+        just time that could be spent eating cookies!)<br>
+
+        <h3>Example:</h3><br> getRatioPerGuest(17, 100) should return 5<br>
+        const guestTotal = 17<br>
+        const cookies = 100<br>
+
+        function getRatioPerGuest(guestTotal, cookies) {<br>
+        return Math.floor(cookies / guestTotal)<br>
+        }<br>
+
+        <hr>
+        <h1>Math.random</h1>
+        <hr>
+        This method returns a random number from 0 and up to (but
+        not including)
+        1.
+        <h3>Example:</h3><br>
+        Math.random() returns 0.31844073752967494
+        You can move the decimal place for this and make the
+        minimum and maximum
+        numbers anything you
+        want.
+
+        <h3>Example:</h3> Math.random() * 10 should return
+        5.44342974004711, <br>
+        and <br>Math.random() * 100
+        should return 72.4784498770139<br>
+        <h3>Example:</h3><br> randomNumeral should return a
+        random number from 0 and
+        up to 1<br>
+
+        let randomNumeral = Math.random();<br>
+
+
+        Combine the powers of .floor and .random<br>
+
+        Combine these two to produce a random whole
+        number.<br>
+        Randomisation is used in a lot of
+        sites/apps e.g. games,
+        animation, playlists, art, password
+        generators.<br>
+        In this example, we have a playlist of 50 songs
+        and want to write a
+        function that shuffles the
+        order in which they
+        are
+        played <br>i.e. 3, 46, 22, 18.<br>
+        <h3>Example:</h3><br> shufflePlaylist(playlist) should
+        choose a random whole
+        number between 0 and 4<br>
+        and
+        then return the song
+        linked
+        to that number in the playlist array.<br>
+        const playlist = ['Easy on me', 'Hold on', 'My
+        little love', 'Woman
+        like me', 'Love is a
+        game']<br>
+
+        function shufflePlaylist(playlist) {<br>
+        const idx = Math.floor(Math.random() * 5)<br>
+        return playlist[idx]<br>
+        }<br>
+
+
+        <hr>------------ Calling the functions
+        -----------
+        <br>
+        <hr>
+        const getRatioPerGuestResults =
+        getRatioPerGuest(guestTotal,
+        cookies)<br>
+        <br>
+        console.log('getRatioPerGuestResults: ',
+        getRatioPerGuestResults)<br>
+        <br>
+        console.log('randomNumeral: ',
+        randomNumeral)
+        <br><br>
+        const shufflePlaylistResults =
+        shufflePlaylist(playlist)<br>
+        <br>
+        console.log('shufflePlaylistResults: ',
+        shufflePlaylistResults)
+        <hr> <br><br>
+
+        <h1>Object.keys()</h1>
+        <hr>
+        <h1> Recap:</h1> objects have properties,
+        which are key and
+        value pairs.<br> In the
+        example below, key is title,
+        and
+        value is
+        'Frog
+        and Toad'.<br>
+        The Object.keys() method returns an
+        array listing the
+        object's keys in order.<br>
+        <h3>Example:</h3><br> getBookKeys(bookData)
+        <br>should return
+        ['title','author','isbn','binding']<br>
+
+        const bookData = {<br>
+        title: 'Frog and Toad',<br>
+        author: 'Arnold Lobel',<br>
+        isbn: 9780008136222,<br>
+        binding: 'Hardback'<br>
+        }<br>
+
+        function getBookKeys (obj) {<br>
+        return Object.keys(obj)
+        }
+        <br><br>
+
+        <hr>
+        <h1>Object.entries()</h1><br>
+        <hr>
+        This method returns an array listing
+        the object's key
+        and value pairs.<br>
+        <h3>Example:</h3><br>
+        getFilmInfo(filmData)<br> should
+        return
+        <br>[['title', 'Jurassic
+        Park'], ['director', 'Steven
+        Spielberg'],
+        ['yearReleased', 1993], ['genre',
+        'Dinosaurs']]<br>
+
+        const filmData = {<br>
+        title: 'Jurassic Park',<br>
+        director: 'Steven Spielberg',<br>
+        yearReleased: 1993,<br>
+        genre: 'Dinosaurs'<br>
+        };<br><br>
+        function getFilmInfo (obj) {<br>
+        return Object.entries(obj);<br>
+        }<br>
+
+
+        <hr> ------------ Calling the
+        functions -----------<br>
+
+        const getBookKeysResults =
+        getBookKeys(bookData)<br><br>
+        console.log('getBookKeysResults: ',
+        getBookKeysResults)<br><br>
+
+        const getFilmInfoResults =
+        getFilmInfo(filmData)<br><br>
+        console.log('getFilmInfoResults: ',
+        getFilmInfoResults)<br><br>
+        <hr>
+        <h1> .length</h1>
+        We can use `.length` to get the
+        length of a
+        string.<br>
+        It returns an integer of how many
+        characters are in
+        the string. <br>This includes
+        spaces.
+        <h3>Example:</h3> <br>length('Aotearoa')
+        should return 8.<br>
+        <h3>Example:</h3> <br>length('New Zealand')
+        should return
+        11.<br>
+        const str = 'Aotearoa'<br>
+
+        function length (str) {return
+        str.length
+        }<br>
+
+        <h1>.toLowerCase() &#38;
+            .toUpperCase()</h1>
+        Sometimes with strings we want to
+        write a function
+        that changes the casing of
+        letters in strings.<br>
+        This is when we want the string to
+        be consistent while
+        assigned to a variable
+        <br>but have certain
+        situations like
+        headings, links etc <br>that the
+        casing needs to
+        change.<br>
+        Here's an example that uses
+        both.<br>
+        <h3>Example:</h3> <br>toCase('James')<br>
+        should return
+        'james-JAMES'.<br>
+        const aName = 'James'<br>
+
+        function toCase (name) {<br>
+        const lower =
+        name.toLowerCase()<br>
+        const upper =
+        name.toUpperCase()<br>
+        return lower + '-' + upper<br>
+        }<br>
+
+        <h1>.charAt()</h1>
+        When we want to access a
+        particular part of a string
+        we can use `.charAt()` <br>To
+        get the character
+        at a
+        specified
+        position.<br>
+        It returns the character that
+        matches that position in
+        the string.<br>
+
+        In this case we are using
+        `.charAt()` to get the first
+        character in each string to
+        then return an
+        acronym made
+        from
+        all three strings.<br>
+        <h3>Example:</h3><br> acronym('Dev',
+        'Academy', ) <br>should
+        return 'DAA'.<br>
+        <h3>Example:</h3> <br>acronym('New',
+        'Zealand', 'Dollar')
+        should return 'NZD'.<br>
+        const str1 = 'Dev'<br>
+        const str2 = 'Academy'<br>
+        const str3 = 'Aotearoa'<br>
+
+        function acronym (str1, str2,
+        str3) {<br>
+        const one = str1.charAt(0)<br>
+        const two = str2.charAt(0)<br>
+        const three = str3.charAt(0)<br>
+        return one + two + three<br>
+        }<br>
+        <hr>
+
+        ------------ Calling the functions
+        -----------<br><br>
+
+        <h3>const lengthResults =
+        length(str)<br><br>
+        console.log('lengthResults: ',
+        lengthResults)<br><br>
+
+        const toCaseResults =
+        toCase(aName)<br><br>
+        console.log('toCaseResults: ',
+        toCaseResults)<br><br>
+
+        const acronymResults =
+        acronym(str1, str2,
+        str3)<br><br>
+        console.log('acronymResults: ',
+        acronymResults)<br><br></h3>
+
+
+
+
+
+
+
+
+    </body>
+
+</html>
