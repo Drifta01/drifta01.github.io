@@ -1,132 +1,62 @@
-
-
-#java-div {
-
-
-
-  margin-left: 20%;
-  border: solid rgb(0, 0, 0) 1px;
-  background-color: rgb(56, 54, 54);
+* {
+  box-sizing: border-box;
+}
+body {
+  /* background: rgb(0, 0, 0); */
+  background-image: linear-gradient(10deg, rgba(255, 255, 255, 0.5) 2%, transparent 2%), linear-gradient( rgba(108, 46, 20, 0) 10%, rgb(225, 208, 76));
+  background-size: 10% 10%;
+  font-family: cursive;
+  text-align: center;
 }
 
 p {
-  font-family: Montserrat;
-  text-align: center;
-  font-size: 20px;
-  border: 2px solid;
-  box-sizing: border-box;
-  border-radius: 5px;
-  width: 80px;
-  margin-left: 40%;
-  line-height: 1;
-  box-shadow: 2px 2px 2px;
+  font-size: 3vw;
+  font-weight: 300;
 }
 
-.java-header {
-
-  text-align: center;
-  font-size: 20px;
-  font-weight: 500;
+h1 {
+  font-size: 6vw;
+  font-weight: 700;
   color: rgb(220, 182, 67);
 }
 
 .container {
-  background-color: rgb(220, 182, 67);
-  border: 1px solid rgb(97, 91, 91);
-
-  margin-top: 20%;
-  margin-right: 15%;
-  max-width: 100%;
-  height: 300px;
+  /* background-color: rgb(220, 182, 67); */
+  /* border: 3px solid rgb(0, 0, 0); */
+  border-radius: 25px;
+  width: 100%;
+  height: 100%;
+  padding: 5px 5px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 50px;
 
   backdrop-filter: blur(11.7px);
-  -webkit-backdrop-filter-box-shadow: 3px 3px 3px blur(11.7px);
+  -webkit-backdrop-filter-box-shadow: 1px 1px 1px blur(1px);
+  box-shadow: 1px 3px 1px;
 }
+
 .button {
-  font-family: Montserrat;
-  font-size: 20px;
-  font-weight: 400;
-  outline: 5%;
+  font-family: "Fira Code", monospace;
+  font-size: 1.5vw;
+  font-weight: 500;
+  display: inline-block;
+  outline: 0;
   cursor: pointer;
-  border: 1px solid rgb(220, 182, 67);
-  border-radius: 5px;
+  border: 3px solid rgb(210, 206, 177);
+  border-radius: 3px;
   color: rgb(0, 0, 0);
-  background: rgb(220, 182, 67);
-  padding: 1px;
-  margin-top: 5px;
+  background: rgba(237, 236, 222, 0.804);
+  padding: 12px 20px;
   text-align: center;
-  transition-duration: 0.65s;
+  transition-duration: 0.45s;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-  line-height: 2;
-  height: 30px;
-
 }
 
 button:hover {
-  color: rgb(0, 0, 0);
-  background-color: rgb(138, 136, 130);
+  color: black;
+  background-color: rgb(220, 182, 67);
   backdrop-filter: blur(11.7px);
   -webkit-backdrop-filter: blur(11.7px);
-}
-
-h2 {
-  font-size: 20px;
-}
-
-.blog-button {
-  border: solid rgb(245, 245, 245) 10px;
-  border-radius: 20px;
-}
-.blog-button {
-  border: solid rgb(243, 237, 237) 10px;
-  border-radius: 5px;
-  width: 5px;
-}
-
-.java-header {
-  border: 3px solid;
-  background-color: rgb(14, 14, 14);
-  border-radius: 10px;
-}
-#cash {
-  border: solid whitesmoke 2px;
-  width: 20%;
-  margin-top: 1%;
-  font-size: 20px;
-  color: white;
-  background-origin: content-box;
-
-}
-#alertBox {
-  border: solid 2px white;
-  width: 20px;
-  height: 20px;
-  background-color: white;
-display:contents;
-}
-#customerOrder {
-  border: solid 1 px wheat;
-  background-color: aliceblue;
-  height: 100px;
-  width: 85%;
-margin: 1px;
-text-align: justify ;
-
-  background-color: white;
-}
-#whiteCoffee{
-  border:solid black 3px;
-
-}
-.home-button{
-  padding-top: 100px;
-  border: solid black 3px;
-
-}
-.button{
-margin-left: 20px;
-margin-right: 10px;
-width:auto;
-height:auto;
 }

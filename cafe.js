@@ -25,12 +25,12 @@ function displayProducts() {
 function displayProducts() {
   for (const [key, value] of Object.entries(products)) {
     document.getElementById(key).innerHTML =  value.stock;
+    displayProducts();
   }
 }
-displayProducts();
 
 // Customer Object
-let customer = { order: [] };
+let customer = { order: [0] };
 let minOrderSize = 1;
 let maxOrderSize = 5;
 
@@ -45,9 +45,7 @@ function generateCustomerOrder() {
     let productName = productNames[productIndex];
     newOrder.push(productName);
   }
-
   customer.order = newOrder;
-  displayCustomerOrder();
 }
 
 // Display Customer Order
@@ -62,7 +60,7 @@ let cash = 0;
 function displayCash() {
   document.getElementById("cash").innerHTML = "Cash"  + cash ;
 
-displayCash();
+  displayCash();
 }
 document.getElementById("fillOrder").onclick = fillOrder;
 
@@ -86,10 +84,10 @@ function fillOrder() {
 
   cash += saleTotal;
   customer.order = [];
+  displayCustomerOrder()
   displayProducts();
   displayCash();
   displayFillOrder()
-  displayCustomerOrder();
 }
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
