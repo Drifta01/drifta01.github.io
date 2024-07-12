@@ -10,11 +10,11 @@
       "top-banner"
       "aside"
       "main"
-      "main";
+      "footer";
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
   }
-  /* #iframe {
+  #iframe {
     grid-area: iframe;
 
     border-width: 2px;
@@ -22,7 +22,7 @@
     width: 100%;
     height: 100%;
     align-items: center;
-  } */
+  }
 
   #header {
     grid-area: header;
