@@ -4,7 +4,8 @@
 
 #nav-menu {
   display: flex;
-  margin-top: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 2.5rem;
   flex-direction: column;
   font-family: Raleway;
   font-weight: 600;

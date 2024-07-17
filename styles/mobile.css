@@ -1,7 +1,8 @@
-@media all and (max-width: 800px) {
-  * {
-    border: solid 1px transparent;
-  }
+
+
+
+@media screen and (max-width: 600px) {
+
 
   #container {
     display: grid;
@@ -117,7 +118,7 @@
     background-color: white;
   }
 
-  */ #zd-wrapper {
+  *#zd-wrapper {
     grid-area: zd-wrapper;
     padding: 0.1rem;
   }

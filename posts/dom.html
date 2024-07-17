@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOM: Applying Classes</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <style>
+    *html {
+      max-width: 100%;
+      display: flex;
+
+      height: 100%;
+    }
+    aside {
+      display: flex;
+      flex: content;
+      flex-direction: column;
+    }
+    h2 {
+      flex: content;
+      color: white;
+      margin: 1px;
+    }
+
+    body {
+      flex-direction: column-reverse;
+      flex-wrap: wrap;
+      background-color: rgb(0, 0, 0);
+      display: flex;
+      align-items: center;
+      /* justify-content: center; */
+    }
+    article {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      border: solid gray 8px;
+      border-style: groove;
+    }
+    div {
+      width: 100px;
+      height: 100px;
+      border: 4px #000000 solid;
+      margin: 10px;
+      border-radius: 50%;
+      background-color: #ed0202;
+    }
+
+    .blue {
+      background-color: blue;
+    }
+    .green {
+      background-color: green;
+    }
+    .yellow {
+      background-color: yellow;
+    }
+    .invisible {
+      border: solid rgb(255, 255, 255);
+
+      display: none;
+    }
+
+    .visible {
+      display: flex;
+      display: block;
+      border: 3px black solid;
+      border-radius: 50%;
+
+      background-color: rgb(255, 0, 0);
+    }
+    header {
+      border: solid 8px rgb(177, 175, 175);
+      border-style: groove;
+      color: rgb(121, 121, 121);
+      padding: 10px;
+      font-size: 80px;
+      font-weight: bolder;
+      text-shadow: 2px 3px rgb(221, 32, 32);
+    }
+    button {
+      /* border: solid 8px rgb(121, 121, 121) 2px; */
+      background-color: rgb(142, 142, 139);
+      font-size: 40px;
+
+
+      border-style: groove;
+      font-family: Montseratt;
+      color: rgb(255, 255, 255);
+    }
+    .home-button{
+      border: 2px solid;
+    }
+  </style>
+  <body>
+    <button><a class="home-button" href="index.html">Home</a></button>
+    <article>
+      <button onclick="makeVisible()">Visible</button><br />
+      <button onclick="makeInVisible()">Invisible</button>
+
+      <div id="one"></div>
+      <div id="two"></div>
+      <div id="three"></div>
+      <div class="invisible"></div>
+    </article>
+    <section>
+    </section>
+
+    <aside>
+      <header>THE DOM</header>
+
+    </aside>
+  </body>
+
+  <script src="classes.js"></script>
+  </html>

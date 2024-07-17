@@ -5,33 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
-      rel="stylesheet"
-      />
-      <link rel="stylesheet" href="main.css" />
-      <title>Tic-Tac-Toe</title>
-    </head>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="tic-tac-toe.css" />
+    <title>Tic-Tac-Toe</title>
+  </head>
 
-
-    <section>
-      <button><a class="home-button" href="/index.html">Home</a></button>
-    </section>
-
-
-
-
-    <button id="resetButton">Reset</button>
-    <h2 id="subtitle">Click on a cell to start!</h2>
+  <section>
+    <button><a class="home-button" href="/index.html">Home</a></button>
+  </section>
   <body>
-    <h1>Tic  Tac  Toe</h1>
-    <table>
-      <tr>
-        <td class="tttCell"></td>
-        <td class="tttCell"></td>
+    <div>
+      <h1>Tic Tac Toe</h1>
+      <table>
+        <tr>
+          <td class="tttCell"></td>
+          <td class="tttCell"></td>
 
-        <td class="tttCell"></td>
-      </tr>
+          <td class="tttCell"></td>
+        </tr>
       <tr>
         <td class="tttCell"></td>
         <td class="tttCell"></td>
@@ -43,7 +34,10 @@
         <td class="tttCell"></td>
       </tr>
     </table>
-    <div id="gameMessage"></div>
     <script src="/game.js" type="module"></script>
-  </body>
+    <button id="resetButton" >Reset</button>
+    <h2 id="subtitle">Click on a cell to start!</h2>
+    <div id="gameMessage"></div>
+</div>
+</body>
 </html>

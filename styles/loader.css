@@ -6,8 +6,8 @@
   background-color: rgb(110, 110, 110);
   align-items: center;
   opacity: 0.5;
-  position: absolute;
-  /* display: none; */
+  position: relative;
+  display: none;
 
   top: 0;
   left: 0;
@@ -17,7 +17,7 @@
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background: #21f700;
+  background: #22ff00;
   position: absolute;
 }
 .loader::before,
@@ -27,7 +27,7 @@
   border-radius: 50%;
   inset: 0;
   background: #ffffff;
-  transform: rotate(0deg) translate(30px);
+  transform: rotate(90deg) translate(30px);
   animation: rotate 1s ease infinite;
 }
 .loader:after {
