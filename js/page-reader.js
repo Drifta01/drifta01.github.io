@@ -35,7 +35,7 @@ function getPost(file) {
   const postContentWrapper = document.getElementById("zd-wrapper");
   const postContent = document.getElementById("zd-content");
   const section = document.getElementById("section");
-  const iframe = document.getElementById("iframe"); //const loader = document.getElementById("loader-wrapper");
+  const iframe = document.getElementById("iframe"); const loader = document.getElementById("loader-wrapper");
 
   // loader.classList.remove("hide");
   // postContentWrapper.classList.add("hide");

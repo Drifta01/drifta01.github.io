@@ -1,7 +1,15 @@
 const links = [
   {
+    title: "Posts",
+    fileName: "/latestPosts.html",
+    type: "html",
+    order: 0,
+    linkText: "Posts",
+  },
+
+  {
     title: "Tic Tac Toe",
-    fileName:"tic-tac-toe.html",
+    fileName: "tic-tac-toe.html",
     type: "html",
     order: 9,
     linkText: "Tic Tac Toe",
@@ -10,21 +18,21 @@ const links = [
     title: "end of sprint 5",
     fileName: "posts/end-of-sprint-5.md",
     type: "md",
-    order: 3,
+    order: 5,
     linkText: "End of sprint 5",
   },
   {
     title: "reflect",
-    fileName:"foundations-and-reflelections.html",
+    fileName: "foundations-and-reflelections.html",
     type: "html",
-    order: 1,
+    order: 5,
     linkText: "Foundations",
   },
   {
     title: "identity",
     fileName: "posts/learning-plan.html",
     type: "html",
-    order: 2,
+    order: 4,
     linkText: "Learning Plan",
   },
   {
@@ -32,28 +40,14 @@ const links = [
     fileName: "java-cafe.html",
     type: "html",
     order: 7,
-    linkText: "posts/java-cafe.html",
+    linkText: "java cafe",
   },
   {
     title: "classes",
     fileName: "posts/classes.md",
     type: "md",
-    order: 4,
-    linkText: "classes & ids",
-  },
-  {
-    title: "te houtaewa",
-    fileName: "posts/te-houtaewa.html",
-    type: "html",
     order: 6,
-    linkText: "te-houtaewa",
-  },
-  {
-    title: "index",
-    fileName: "index.html",
-    type: "html",
-    order: 0,
-    linkText: "home",
+    linkText: "classes & ids",
   },
   {
     title: "Problem Solving",
@@ -68,6 +62,13 @@ const links = [
     type: "html",
     order: 8,
     linkText: "The DOM",
+  },
+  {
+    title: "index",
+    fileName: "index.html",
+    type: "html",
+    order: 9,
+    linkText: "home",
   },
 ];
 

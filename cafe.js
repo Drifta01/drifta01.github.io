@@ -20,7 +20,12 @@ let customer = { order: [] };
 let minOrderSize = 1;
 let maxOrderSize = 5;
 
-// Generate Customer Order
+// Add product to customer order
+function addProductToOrder(productName) {
+  customer.order.push(productName);
+  displayCustomerOrder();
+}
+
 function generateCustomerOrder() {
   let orderSize = getRandomInt(minOrderSize, maxOrderSize);
   let newOrder = [];
@@ -32,16 +37,33 @@ function generateCustomerOrder() {
     newOrder.push(productName);
   }
 
-  customer.order = newOrder;
-  displayCustomerOrder();
+  // Attach event listeners to product order buttons
+  document.getElementById("whiteCoffeeOrderButton").onclick = function () {
+    addProductToOrder("whiteCoffee");
+  };
+  document.getElementById("blackCoffeeOrderButton").onclick = function () {
+    addProductToOrder("blackCoffeeOrderButton");
+  };
+  document.getElementById("sandwichOrderButton").onclick = function () {
+    addProductToOrder("sandwich");
+  };
+  document.getElementById("muffinOrderButton").onclick = function () {
+    addProductToOrder("muffin");
+  };
+  document.getElementById("eggsOrderButton").onclick = function () {
+    addProductToOrder("eggs");
+  };
+  document.getElementById("customerOrder").innerHTML = `Customer order: ${customer.order.join(", ")}`;
 }
+displayCustomerOrder();
+
+// Generate Customer Order
 
 // Display Customer Order
 function displayCustomerOrder() {
-  document.getElementById("customerOrder").innerHTML = `Customer order: ${customer.order.join(", ")}`;
+  document.getElementById("customerButton").onclick = generateCustomerOrder;
+  customer.order = newOrder;
 }
-document.getElementById("customerButton").onclick = generateCustomerOrder;
-
 // Transactions
 let cash = 0;
 
@@ -61,7 +83,6 @@ function fillOrder() {
       alert(`I'm sorry, we're out of ${productName}`);
     }
   });
-  displayAlert();
 
   cash += saleTotal;
   customer.order = [];

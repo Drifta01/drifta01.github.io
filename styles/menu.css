@@ -20,7 +20,7 @@
 #nav-menu .menu-item {
   font-size: .8rem;
   background: linear-gradient(90deg, #232a3c, purple);
-  padding: 0.5;
+  padding: 2.5em;
 
   cursor: pointer;
   filter: brightness(1);
