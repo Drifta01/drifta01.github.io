@@ -15,11 +15,11 @@ const links = [
     linkText: "Tic Tac Toe",
   },
   {
-    title: "end of sprint 5",
-    fileName: "posts/end-of-sprint-5.md",
-    type: "md",
+    title: "Learn to be a GIT",
+    fileName: "git.html",
+    type: "html",
     order: 5,
-    linkText: "End of sprint 5",
+    linkText: "Learn to be a GIT",
   },
   {
     title: "reflect",
