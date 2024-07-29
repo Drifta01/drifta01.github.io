@@ -36,11 +36,11 @@ const links = [
     linkText: "Learning Plan",
   },
   {
-    title: "java cafe",
-    fileName: "java-cafe.html",
+    title: "Charlottes Web",
+    fileName: "charlottesWeb.html",
     type: "html",
     order: 7,
-    linkText: "java cafe",
+    linkText: "Charlottes Web",
   },
   {
     title: "classes",
@@ -71,7 +71,5 @@ const links = [
     linkText: "home",
   },
 ];
-
-
 
 export default links;
