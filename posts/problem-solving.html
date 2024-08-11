@@ -6,58 +6,77 @@
     <title>Document</title>
   </head>
   <style>
-    * {
-      box-sizing: content-box;
-      max-height: 100%;
-    }
-
-    body {
-      background-color: beige;
-    }
-
-    header {
-      font-family: Montserrat;
-      font-weight: bold;
-      font-size: 60px;
-      text-align: center;
-      text-shadow: 3px 3px 3px gray;
-    }
-
-    article {
-      border: solid rgb(238, 238, 238) 1px;
-      margin: 40px;
-      padding-bottom: 100px;
-      text-align: justify;
-    }
-
-    h2 {
-      font-family: Montserrat;
-      color: black;
-    }
-
-    h3 {
-      font-family: Raleway;
-    }
-
-    p {
-      font-family: sans-serif;
-      font-size: 18px;
-    }
-    @media (max-width: 600px) {
-      .std-doc h1 {
-        font-size: 3rem;
-        margin-top: 1rem;
+     body {
+        font-family: 'Raleway', sans-serif;
+        color: #efefef;
       }
-    }
+
+      .home-button {
+        /* Add styles for your home button here */
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #0074D9;
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        text-decoration: none;
+        margin-top: 0px;
+
+      }
+
+      h1 {
+        font-size: 32px;
+        padding-left: 5px;
+      }
+
+      p {
+        font-size: 20px;
+        line-height: 1;
+        font-weight: 500;
+        padding-left: 5px;
+        color: #515151;
+      }
+
+      u {
+        color: #272727;
+      }
+
+      h2 {
+        font-size: 24px;
+        padding-left: 5px;
+        color: #515151;
+      }
+
+
+      img {
+        width: 100px;
+        border: 1px solid black;
+        border-radius: 50px;
+        background-color: black;
+      }
+
+      hr {
+        border: 5px solid #2b2b2b;
+      }
+
+      li {
+        font-size: 18px;
+        color: #391818;
+      }
+
+      @media (max-width: 768px) {
+        /* Add your mobile-specific styles here */
+      }
   </style>
 
 
   <body>
      <section>
-    <button><a class="home-button" href="/latestPosts.html">Home</a></button>
+    <button><a class="home-button" href="/index.html">Home</a></button>
   </section>
     <u>
-      <header>Problem Solving</header>
+      <h1>Problem Solving</h1>
     </u>
 
     <div>
@@ -67,7 +86,7 @@
         </u>
 
         <u>
-          <h3>The problem i had was in javascript cafe</h3>
+          <h2>The problem i had was in javascript cafe</h2>
         </u>
 
         <p>
@@ -95,7 +114,7 @@
           <h2>Elegantly solved a problem:</h2>
         </u>
 
-        <h3>Problem: javascript kata</h3>
+        <h2>Problem: javascript kata</h2>
 
         <h2>what was the problem?</h2>
 
@@ -116,8 +135,8 @@
 
         <p>Asking for help when stuck is the best method for getting through the work</p>
 
-        <h3>Reflect on how confident you feel using each of these problem-solving techniques/processes:</h3>
-        <h3>
+        <h2>Reflect on how confident you feel using each of these problem-solving techniques/processes:</h2>
+        <h2>
           <ul>
             <u>
               <li>Pseudocode:</li>
@@ -155,7 +174,7 @@
             </u>
             Using the methods above is helping and as i continue to learn, I will practice these methods more frequintley.
           </ul>
-        </h3>
+        </h2>
       </article>
     </div>
   </body>

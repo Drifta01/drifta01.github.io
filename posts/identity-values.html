@@ -11,76 +11,70 @@
       rel="stylesheet"
     />
     <title>Identity and values</title>
-    <style>
-      * {
-        /* border: 1px dashed gray; */
-        box-sizing: content-box;
-        max-width: 100%;
-      }
-      .std-doc {
-        font-family: sans-serif;
-        max-width: 100%;
-        margin: auto;
-        color: rgb(94, 87, 87);
+      <style>
+      body {
+        font-family: 'Raleway', sans-serif;
+        color: #efefef;
       }
 
-      .std-doc {
-        h1,
-        h2,
-        h3 {
-          color: rgb(96, 96, 96);
-        }
-      }
-
-      .std-doc h1 {
-        font-family: Cormorant;
-        font-size: 4px;
-        text-align: justify;
-        margin-top: 1px;
-        max-width: 100%;
-      }
-
-      .std-doc h2 {
-        font-size: 2rem;
-        font-family: Cormorant;
-        text-align: center;
-      }
-      .std-doc h3 {
-        font-size: 1rem;
-      }
-      .std-doc section {
-        padding-left: 10%;
-        padding-right: 10%;
-      }
-      .std-doc button {
-        width: 80px;
-        border: solid 2px rgb(83, 83, 83);
-        background-color: rgb(185, 184, 184);
-        color: rgb(142, 140, 140);
+      .home-button {
+        /* Add styles for your home button here */
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #0074D9;
+        color: #ffffff;
+        border: none;
         border-radius: 5px;
-        color: rgb(172, 172, 172);
+        font-weight: bold;
+        text-decoration: none;
+        margin-top: 0px;
+
+      }
+      h1 {
+        font-size: 32px;
+        padding-left: 5px;
+        color: #515151;
+      }
+      p {
+        font-size: 20px;
+        line-height: 1;
+        font-weight: 500;
+        padding-left: 5px;
+        color: #515151;
+      }
+      u {
+        color: #272727;
       }
 
-      .std-doc button:hover {
-        background-color: rgb(152, 148, 148);
-      }
-      .std-doc cite {
-        padding-left: 1rem;
-      }
-
-      .std-doc hr {
-        border-width: 1px;
-        border-style: solid;
-        border-color: gray;
+      h2 {
+        font-size: 24px;
+        padding-left: 5px;
+        color: #515151;
       }
 
-      .std-doc {
-        font-size: 2rem;
-        margin-top: 1rem;
+      img {
+        width: 100px;
+        border: 1px solid black;
+        border-radius: 50px;
+        background-color: black;
       }
-      @media (max-width: 800px) {
+
+      hr {
+        border: 5px solid #2b2b2b;
+      }
+
+      li {
+        font-size: 18px;
+        color: #391818;
+      }
+
+      @media (max-width: 768px) {
+        /* Add your mobile-specific styles here */
       }
     </style>
+  <section>
+    <button><a class="home-button" href="/index.html">Home</a></button>
+  </section>
   </head>
   <body class="std-doc">
     <section>
@@ -89,9 +83,6 @@
         Values &<br />
         Reflections
       </h1>
-      <section>
-        <button><a class="home-button" href="/index.html">Home</a></button>
-      </section>
       <p>
         "Reflection is the most important part of the learning process. We do not learn from experience... we learn from reflecting on
         experience."

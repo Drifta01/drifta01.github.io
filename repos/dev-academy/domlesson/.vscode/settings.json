@@ -1,9 +1,0 @@
-{
-    "html.autoClosingTags": false,
-    "htmlhint.documentSelector": [
-
-        "html",
-        "htm"
-    ],
-    "html.autoCreateQuotes": false
-}

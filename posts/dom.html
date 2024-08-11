@@ -6,45 +6,49 @@
   </head>
 
   <style>
-    *html {
-      max-width: 100%;
+    html {
       display: flex;
-
-      height: 100%;
-    }
-    aside {
-      display: flex;
-      flex: content;
       flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+    }
+
+    h1 {
+      color: white;
+      font-size: 50px;
+      text-align: center;
+      text-shadow: 2px 3px rgb(221, 32, 32);
     }
     h2 {
-      flex: content;
       color: white;
-      margin: 1px;
+      font-size: 40px;
+      text-align: center;
+      text-shadow: 2px 3px rgb(221, 32, 32);
     }
 
     body {
-      flex-direction: column-reverse;
-      flex-wrap: wrap;
       background-color: rgb(0, 0, 0);
       display: flex;
+      flex-direction: column;
       align-items: center;
-      /* justify-content: center; */
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+
     }
     article {
       display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      border: solid gray 8px;
-      border-style: groove;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
     }
     div {
       width: 100px;
       height: 100px;
-      border: 4px #000000 solid;
       margin: 10px;
-      border-radius: 50%;
-      background-color: #ed0202;
     }
 
     .blue {
@@ -60,41 +64,56 @@
       border: solid rgb(255, 255, 255);
 
       display: none;
+
     }
 
     .visible {
-      display: flex;
       display: block;
-      border: 3px black solid;
-      border-radius: 50%;
+      margin-left: 250px;
+      margin-top: 250px;
+      size: 500px;
+      position: absolute;
+
 
       background-color: rgb(255, 0, 0);
     }
     header {
-      border: solid 8px rgb(177, 175, 175);
-      border-style: groove;
-      color: rgb(121, 121, 121);
-      padding: 10px;
-      font-size: 80px;
-      font-weight: bolder;
+      color: white;
+      font-size: 50px;
+      text-align: center;
       text-shadow: 2px 3px rgb(221, 32, 32);
     }
     button {
-      /* border: solid 8px rgb(121, 121, 121) 2px; */
-      background-color: rgb(142, 142, 139);
-      font-size: 40px;
-
-
-      border-style: groove;
-      font-family: Montseratt;
-      color: rgb(255, 255, 255);
-    }
-    .home-button{
+      background-color: rgb(0, 0, 0);
       border: 2px solid;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 12px;
+    }
+    .home-button {
+      /* Add styles for your home button here */
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #0074d9;
+      color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      text-decoration: none;
+      margin-top: 0px;
+    }
+    @media (max-width: 768px) {
+      /* Add your mobile-specific styles here */
     }
   </style>
   <body>
-    <button><a class="home-button" href="/latestPosts.html">Home</a></button>
+    <button><a class="home-button" href="/index.html">Home</a></button>
     <article>
       <button onclick="makeVisible()">Visible</button><br />
       <button onclick="makeInVisible()">Invisible</button>
@@ -104,14 +123,11 @@
       <div id="three"></div>
       <div class="invisible"></div>
     </article>
-    <section>
-    </section>
 
     <aside>
       <header>THE DOM</header>
-
     </aside>
   </body>
 
   <script src="classes.js"></script>
-  </html>
+</html>

@@ -23,21 +23,30 @@
     <div id="container">
       <header id="header">
         <h1>Carls Blog</h1>
+        <p>button</p>
         <h3>you heard it here!</h3>
       </header>
+
+      <aside id="aside">
+        <h1 class="center">Latest Posts...</h1>
+        <ul id="nav-menu"></ul>
+      </aside>
       <div id="top-banner">
-        <a href="https://frontendmasters.com/" target="_blank"><img src="/ads/fronendmasers.jpg" /></a>
-        <a href="https://devacademy.co.nz/" target="_blank"><img src="/ads/horizontal_dark-text.png" /></a>
+        <a href="https://frontendmasters.com/" target="_blank"><img src="/ads/fronendmasers.jpg" alt="Frontend Masters Ad" /></a>
+        <a href="https://devacademy.co.nz/" target="_blank"><img src="/ads/horizontal_dark-text.png" alt="Dev Academy Ad" /></a>
       </div>
+
       <main id="main">
         <iframe class="hide" id="iframe" width="100%" height="800px"></iframe>
         <div id="zd-wrapper" class="hide"><zero-md id="zd-content"></zero-md></div>
         <section id="section">
-          <article class="article">
+          <article class="article" id="article-hide">
             <div class="card">
               <h3 class="card-heading">LEARNING PLAN</h3>
               <div class="card-text"></div>
-              <a class="card-button" href="posts/learning-plan.html"><img src="img/Duplicate State.jpg" class="card-img" /></a>
+              <a class="card-button" href="posts/learning-plan.html"
+                ><img src="img/Duplicate State.jpg" class="card-img" alt="Learning Plan"
+              /></a>
             </div>
           </article>
           <article class="article">
@@ -51,7 +60,7 @@
             <div class="card">
               <h3 class="card-heading">The DOM</h3>
               <div class="card-text"></div>
-              <a class="card-button" href="/posts/DOM-applying-classes/dom.html"><img src="img/theDOM.jpg" class="card-img" /></a>
+              <a class="card-button" href="posts/dom.html"><img src="img/theDOM.jpg" class="card-img" /></a>
             </div>
           </article>
           <article class="article">
@@ -91,14 +100,12 @@
           </article>
         </section>
       </main>
-      <aside class="#aside">
-        <h1 class="center">Latest Posts...</h1>
-        <ul id="nav-menu"></ul>
-      </aside>
+
       <footer id="footer">
         <div style="max-height: 150px"></div>
       </footer>
-      <script src="./js/app.js" type="module" async="false"></script>
     </div>
+
+    <script src="./js/app.js" type="module" async="false"></script>
   </body>
 </html>

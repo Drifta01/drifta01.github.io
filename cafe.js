@@ -1,17 +1,18 @@
 // Stock Control
 let products = {
-  whiteCoffee: { stock: 5, price: 4 },
-  blackCoffee: { stock: 5, price: 3 },
-  sandwich: { stock: 9, price: 3 },
-  muffin: { stock: 2, price: 3.5 },
-  eggs: { stock: 1, price: 3.5 },
+  whiteCoffee: { stock: 5, price: 4, wholesaleCost: 2 },
+  blackCoffee: { stock: 5, price: 3, wholesaleCost: 1.5 },
+  sandwich: { stock: 9, price: 3, wholesaleCost: 1.8 },
+  muffin: { stock: 2, price: 3.5, wholesaleCost: 2 },
+  eggs: { stock: 5, price: 3.5, wholesaleCost: 1.2 },
 };
 
-// Display Products
 function displayProducts() {
-  for (const [key, value] of Object.entries(products)) {
-    document.getElementById(key).innerHTML = `${key} : ${value.stock}`;
-  }
+  document.getElementById("whiteCoffee").innerHTML = "White Coffee: " + products.whiteCoffee.stock;
+  document.getElementById("blackCoffee").innerHTML = "Black Coffee: " + products.blackCoffee.stock;
+  document.getElementById("sandwich").innerHTML = "Sandwich: " + products.sandwich.stock;
+  document.getElementById("muffin").innerHTML = "Muffin: " + products.muffin.stock;
+  document.getElementById("eggs").innerHTML = "Eggs: " + products.eggs.stock;
 }
 displayProducts();
 
@@ -20,12 +21,11 @@ let customer = { order: [] };
 let minOrderSize = 1;
 let maxOrderSize = 5;
 
-// Add product to customer order
-function addProductToOrder(productName) {
-  customer.order.push(productName);
-  displayCustomerOrder();
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+// Generate Customer Order
 function generateCustomerOrder() {
   let orderSize = getRandomInt(minOrderSize, maxOrderSize);
   let newOrder = [];
@@ -36,73 +36,54 @@ function generateCustomerOrder() {
     let productName = productNames[productIndex];
     newOrder.push(productName);
   }
-
-  // Attach event listeners to product order buttons
-  document.getElementById("whiteCoffeeOrderButton").onclick = function () {
-    addProductToOrder("whiteCoffee");
-  };
-  document.getElementById("blackCoffeeOrderButton").onclick = function () {
-    addProductToOrder("blackCoffeeOrderButton");
-  };
-  document.getElementById("sandwichOrderButton").onclick = function () {
-    addProductToOrder("sandwich");
-  };
-  document.getElementById("muffinOrderButton").onclick = function () {
-    addProductToOrder("muffin");
-  };
-  document.getElementById("eggsOrderButton").onclick = function () {
-    addProductToOrder("eggs");
-  };
-  document.getElementById("customerOrder").innerHTML = `Customer order: ${customer.order.join(", ")}`;
-}
-displayCustomerOrder();
-
-// Generate Customer Order
-
-// Display Customer Order
-function displayCustomerOrder() {
-  document.getElementById("customerButton").onclick = generateCustomerOrder;
   customer.order = newOrder;
+  displayCustomerOrder();
 }
+
+function displayCustomerOrder() {
+  document.getElementById("customerOrder").innerHTML = "Customer order: " + customer.order.join(", ");
+}
+
+document.getElementById("customerButton").onclick = generateCustomerOrder;
+
 // Transactions
 let cash = 0;
 
 function displayCash() {
-  document.getElementById("cash").innerHTML = `Cash: ${cash}`;
+  document.getElementById("cash").innerHTML = "Cash: " + cash;
 }
 displayCash();
 
+document.getElementById("fillOrder").onclick = fillOrder;
+
 function fillOrder() {
   let saleTotal = 0;
+  let alertBox = document.getElementById("alertBox");
+  alertBox.innerHTML = ""; // Clear previous alerts
 
   customer.order.forEach((productName) => {
     if (products[productName].stock > 0) {
       products[productName].stock--;
       saleTotal += products[productName].price;
     } else {
-      alert(`I'm sorry, we're out of ${productName}`);
+      alertBox.innerHTML += "I'm sorry, we're out of " + productName + "<br>";
     }
   });
 
   cash += saleTotal;
   customer.order = [];
-
-  displayProducts();
   displayCash();
-  displayCustomerOrder();
+  displayProducts();
 }
 
-document.getElementById("fillOrder").onclick = fillOrder;
-
-// Clear Menu
-function clearMenu() {
-  customer.order = [];
-  displayCustomerOrder();
-}
-
-document.getElementById("clearMenu").onclick = clearMenu;
-
-// Helper Function: Generate Random Number Within Range
-function getRandomInt(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
+function restockProduct(productName) {
+  let product = products[productName];
+  if (cash >= product.wholesaleCost) {
+    product.stock++;
+    cash -= product.wholesaleCost;
+    displayCash();
+    displayProducts();
+  } else {
+    alert("Not enough cash to restock " + productName);
+  }
 }
