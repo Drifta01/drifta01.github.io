@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 20%;
+  background-color: beige;
+  font-family: Raleway;
+}
+h1 {
+  font-size: 38px;
+}
+h2 {
+  font-size: 26px;
+  color: rgb(88, 13, 13);
+}
+h4 {
+  font-size: 18px;
+  line-height: 1.5em;
+  color: rgb(88, 13, 13);
+}
+.styled:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}

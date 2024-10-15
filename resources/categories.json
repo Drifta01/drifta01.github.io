@@ -1,0 +1,51 @@
+[
+  {
+    "name": "Case"
+  },
+  {
+    "name": "Cables"
+  },
+  {
+    "name": "Meters"
+  },
+  { "name": "Cable Management" },
+  {
+    "name": "Clips"
+  },
+  {
+    "name": "Fasteners"
+  },
+  {
+    "name": "Transformer"
+  },
+  {
+    "name": "Components"
+  },
+  {
+    "name": "Switches"
+  },
+  {
+    "name": "Bumper Feet"
+  },
+  {
+    "name": "Load type"
+  },
+  {
+    "name": "PCB"
+  },
+  {
+    "name": "Internal Wiring"
+  },
+  {
+    "name": "Sundries"
+  },
+  {
+    "name": "Labour Hours"
+  },
+  {
+    "name": "Packaging"
+  },
+  {
+    "name": "Freight"
+  }
+]
