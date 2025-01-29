@@ -1,4 +1,4 @@
-
+<!--
 # Applying Classes in the DOM
 
 In this challenge you will use your VS code editor to manipulate the DOM by changing the colours of the dots you see in your browser.
@@ -44,4 +44,4 @@ Notice that the fourth div in `index.html` has a class already: `invisible`. It'
 
 ## Last steps
 
-12. When completed make sure you stage, commit, and push your work back to GitHub.
+12. When completed make sure you stage, commit, and push your work back to GitHub. -->

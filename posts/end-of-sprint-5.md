@@ -1,4 +1,4 @@
-<style>
+<!-- <style>
 *{
     box-sizing:content;
     padding-left: 20px;
@@ -56,4 +56,4 @@ don't sweat the small stuff i'm sure
 
 ### Do you feel like a programmer? If yes; why? If no; why not?
 
-i couldn't say , maybe i can answer that in 10 weeks from now.. or ask the the future me.
+i couldn't say , maybe i can answer that in 10 weeks from now.. or ask the the future me. -->
