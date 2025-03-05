@@ -1,4 +1,3 @@
-<!--
 # Applying Classes in the DOM
 
 In this challenge you will use your VS code editor to manipulate the DOM by changing the colours of the dots you see in your browser.
@@ -34,7 +33,7 @@ Notice that the fourth div in `index.html` has a class already: `invisible`. It'
 
 `getElementsByClassName` returns a collection of HTML elements, because there could be many DOM elements with the class `invisible`. The [MDN documentation on `getElementsByClassName`](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName) might be useful here.
 
-8. Write a new function named `makeVisible`.  Because there's only one invisible div, we know it must be element `[0]` in the array that comes back from `getElementsByClassName`.
+8. Write a new function named `makeVisible`. Because there's only one invisible div, we know it must be element `[0]` in the array that comes back from `getElementsByClassName`.
 
 9. Add the `'visible'` class to the div's `classList` property using the same method as the previous examples.
 
@@ -44,4 +43,4 @@ Notice that the fourth div in `index.html` has a class already: `invisible`. It'
 
 ## Last steps
 
-12. When completed make sure you stage, commit, and push your work back to GitHub. -->
+12. When completed make sure you stage, commit, and push your work back to GitHub.
