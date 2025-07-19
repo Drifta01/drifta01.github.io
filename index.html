@@ -1,122 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap"
-      rel="stylesheet" />
-    <link rel="stylesheet" href="./styles/menu.css" />
-    <link rel="stylesheet" href="./styles/main.css" />
-    <link rel="stylesheet" href="./styles/mobile.css" />
-    <link rel="stylesheet" href="./styles/loader.css" />
-    <script type="module" src="https://cdn.jsdelivr.net/npm/zero-md@3?register"></script>
-
-    <title>Document</title>
+    <meta name="description" content="Carl's Blog - Thoughts on programming, mental health, and personal development" />
+    <title>Carl's Blog | Programming & Personal Development</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles/styles.css" />
   </head>
-
   <body>
     <div id="container">
       <header id="header">
-        <h1>Carls Blog</h1>
-
-        <h3>you heard it here!</h3>
+        <nav class="main-nav">
+          <div class="logo">
+            <h1>Carl's Blog</h1>
+            <p class="tagline"></p>
+          </div>
+          <ul class="nav-links" alt="'nav-links">
+            <li><a href="#featured">Featured</a></li>
+            <li><a href="#latest">Latest Posts</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+        </nav>
       </header>
 
-      <aside id="aside">
-        <h1 class="center">Latest Posts...</h1>
-        <ul id="nav-menu"></ul>
-      </aside>
-      <div id="top-banner">
-        <a href="https://frontendmasters.com/" target="_blank"><img src="/ads/fronendmasers.jpg"
-            alt="Frontend Masters Ad" /></a>
-        <a href="https://devacademy.co.nz/" target="_blank"><img src="/ads/horizontal_dark-text.png"
-            alt="Dev Academy Ad" /></a>
+      <div class="featured-post" id="featured">
+        <!-- <article class="article featured">
+          <div class="card featured-card">
+            <div class="card-content">
+              <h2 class="featured-heading"></h2>
+              <p class="featured-excerpt">A comprehensive guide to my learning journey and goals in software development.</p>
+              <a class="featured-button" href="posts/learning-plan.html">
+                <img src="img/Duplicate State.jpg" class="featured-img" alt="Learning Plan" />
+                <span>Read More →</span>
+              </a>
+            </div>
+          </div>
+        </article> -->
+      </div>
+
+      <div class="ad-banner" id="top-banner">
+        <div class="ad-container">
+          <a href="https://frontendmasters.com/" target="blank" rel="noopener">
+            <img src="/ads/fronendmasers.jpg" alt="Frontend Masters Ad" />
+          </a>
+        </div>
+        <div class="ad-container">
+          <a href="https://devacademy.co.nz/" target="blank" rel="noopener">
+            <img src="/ads/horizontal_dark-text.png" alt="Dev Academy Ad" />
+          </a>
+        </div>
       </div>
 
       <main id="main">
-        <iframe class="hide" id="iframe" width="100%" height="800px"></iframe>
         <div id="zd-wrapper" class="hide"><zero-md id="zd-content"></zero-md></div>
-        <section id="section">
-          <article class="article" id="article-hide">
-            <div class="card">
-              <h3 class="card-heading">LEARNING PLAN</h3>
-              <div class="card-text"></div>
-              <a class="card-button" href="posts/learning-plan.html"><img src="img/Duplicate State.jpg" class="card-img"
-                  alt="Learning Plan" /></a>
-            </div>
-          </article>
-          <article class="article">
-            <div class="card">
-              <h3 class="card-heading">Animals of the week <br> The Hyrax</h3>
-              <div class="card-text"></div>
-              <a class="card-button" href="https://en.wikipedia.org/wiki/Hyrax"><img src="img/download.webp"
-                  class="card-img" /></a>
-            </div>
-          </article>
-          <article class="article">
-            <div class="card">
-              <h3 class="card-heading">Mindfulness</h3>
-              <div class="card-text"></div>
-              <a class="card-button" href="posts/emoti-intelli.html"><img src="img/mindfulness612x612.jpg"
-                  class="card-img" /></a>
-            </div>
-          </article>
-          <article class="article">
-            <div class="card">
-              <h3 class="card-heading">The DOM</h3>
-              <div class="card-text"></div>
-              <a class="card-button" href="posts/dom.html"><img src="img/theDOM.jpg" class="card-img" /></a>
-            </div>
-          </article>
-          <article class="article">
-            <div class="card">
-              <h3 class="card-heading">Problem Solving</h3>
-              <div class="card-text"></div>
-              <a class="card-button" href="problem-solving.html"><img src="img/problem-solving-612x612.jpg"
-                  class="card-img" /></a>
-            </div>
-          </article>
-          <article class="article">
-            <div class="card">
-              <h3 class="card-heading">Tic Tac Toe</h3>
-              <div class="card-text"></div>
-              <a class="card-button" href="tic-tac-toe.html"><img src="img/tic-tac-toe.jpg" class="card-img" /></a>
-            </div>
-          </article>
-          <article class="article">
-            <div class="card">
-              <h3 class="card-heading">Charlottes Web</h3>
-              <div class="card-text"></div>
-              <a class="card-button" href="charlottesWeb.html"><img src="img/charlottes-web.jpg" class="card-img" /></a>
-            </div>
-          </article>
-          <article class="article">
-            <div class="card">
-              <h3 class="card-heading">Foundations</h3>
-              <div class="card-text"></div>
-              <a class="card-button" href="foundations-and-reflelections.html"><img src="img/fondations612x612.jpg"
-                  class="card-img" /></a>
-            </div>
-          </article>
-          <article class="article">
-            <div class="card">
-              <h3 class="card-heading">Identity and Values</h3>
-              <div class="card-text"></div>
-              <a class="card-button" href="identity-values.html"><img src="img/identity9.jpg" class="card-img" /></a>
-            </div>
-          </article>
+
+        <section id="latest" class="posts-grid">
+          <h2 class="section-title">Latest Posts</h2>
+          <p class="card-excerpt">
+            This is a  blog .
+          </p>
+          <div class="articles-container">
+            <article class="article">
+              <div class="card">
+                <img src="/styles/images/istockphoto-NZ1jpg-Photoroom.png" class="card-img" alt="T" />
+                <div class="card-content">
+                  <h3 class="card-heading"></h3>
+                  <a class="card-button" href="#">Read More →</a>
+                  <div class="footer-links">
+                    <h3>Categories</h3>
+                    <ul>
+                      <li><a href="#programming">Life Hacks</a></li>
+                      <li><a href="#personal-growth"></a></li>
+                      <li><a href="#mindfulness"></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- <article class="article">
+              <div class="card">
+                <img src="img/mindfulness612x612.jpg" class="card-img" alt="Mindfulness" />
+                <div class="card-content">
+                  <h3 class="card-heading">Mindfulness</h3>
+                  <p class="card-excerpt">Exploring emotional intelligence and mental well-being.</p>
+                  <a class="card-button" href="posts/emoti-intelli.html">Read More →</a>
+                </div>
+              </div>
+            </article> -->
+            <!-- 
+            <article class="article">
+              <div class="card">
+                <img src="img/theDOM.jpg" class="card-img" alt="The DOM" />
+                <div class="card-content">
+                  <h3 class="card-heading">The DOM</h3>
+                  <p class="card-excerpt">Understanding the Document Object Model and its importance in web development.</p>
+                  <a class="card-button" href="posts/dom.html">Read More →</a>
+                </div>
+              </div>
+            </article> -->
+
+            <!-- <article class="article">
+              <div class="card">
+                <img src="img/problem-solving-612x612.jpg" class="card-img" alt="Problem Solving" />
+                <div class="card-content">
+                  <h3 class="card-heading">Problem Solving</h3>
+                  <p class="card-excerpt">Techniques and strategies for effective problem solving in programming.</p>
+                  <a class="card-button" href="problem-solving.html">Read More →</a>
+                </div>
+              </div>
+            </article> -->
+
+            <!-- <article class="article"> -->
+            <!-- <div class="card">
+              <img src="img/tic-tac-toe.jpg" class="card-img" alt="Tic Tac Toe" />
+              <div class="card-content">
+                <h3 class="card-heading">Tic Tac Toe</h3>
+                <p class="card-excerpt">Building a simple Tic Tac Toe game using HTML, CSS, and JavaScript.</p>
+                <a class="card-button" href="tic-tac-toe.html">Read More →</a>
+              </div>
+            </div> -->
+            <!-- </article>
+
+            <article class="article">
+              <div class="card">
+                <img src="img/charlottes-web.jpg" class="card-img" alt="Charlottes Web" />
+                <div class="card-content">
+                  <h3 class="card-heading">Charlottes Web</h3>
+                  <p class="card-excerpt">A deep dive into the themes and lessons of Charlottes Web.</p>
+                  <a class="card-button" href="charlottesWeb.html">Read More →</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="article">
+              <div class="card">
+                <img src="img/fondations612x612.jpg" class="card-img" alt="Foundations" />
+                <div class="card-content">
+                  <h3 class="card-heading">Foundations</h3>
+                  <p class="card-excerpt">Exploring the fundamental concepts of programming and web development.</p>
+                  <a class="card-button" href="foundations-and-reflelections.html">Read More →</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="article">
+              <div class="card">
+                <img src="img/identity9.jpg" class="card-img" alt="Identity and Values" />
+                <div class="card-content">
+                  <h3 class="card-heading">Identity and Values</h3>
+                  <p class="card-excerpt">Reflecting on personal values and their impact on life and career.</p>
+                  <a class="card-button" href="identity-values.html">Read More →</a>
+                </div>
+              </div>
+            </article> -->
+          </div>
         </section>
       </main>
 
+      <aside id="aside" class="sidebar">
+        <div class="sidebar-content">
+          <h2 class="sidebar-title">What the Fuck is Going Wrong</h2>
+          <a href="#quick-nav-menu"><ul id="nav-menu" class="quick-nav-menu"></ul></a>
+          <img src="/styles/images/istockphoto-NZ1jpg-Photoroom.png" alt="Quick Nav Icon" class="quick-nav-icon" />
+          <div class="quick-nav-links">
+      
+        </div>
+      </aside>
+
       <footer id="footer">
-        <div style="max-height: 150px"></div>
+        <div class="footer-content">
+          <div class="footer-text">
+            <h3>About This Blog</h3>
+            <p></p>
+          </div>
+
+          <p class="copyright">© 2023 Carl's Blog. All rights reserved.</p>
+        </div>
       </footer>
     </div>
 
     <script src="./js/app.js" type="module" async="false"></script>
   </body>
+</html>

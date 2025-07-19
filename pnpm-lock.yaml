@@ -14,12 +14,13 @@ importers:
       tailwind-merge:
         specifier: ^2.6.0
         version: 2.6.0
-      tailwindcss:
-        specifier: ^4.0.0
-        version: 4.1.10
       vite:
         specifier: ^5.3.1
         version: 5.4.19
+    devDependencies:
+      tailwindcss:
+        specifier: ^4.0.0
+        version: 4.1.10
 
 packages:
 
