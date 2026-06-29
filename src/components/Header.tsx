@@ -2,40 +2,40 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <header className="bg-gradient-to-r from-gray-800 to-gray-900 text-white p-6 shadow-md">
+    <header className="bg-slate-900  text-white p-6 shadow-md">
       <nav className="container mx-auto flex justify-between items-center">
         <div className="logo">
           <Link href="/" className="text-3xl font-bold tracking-tight">
-            WTF!!
+            Home
           </Link>
         </div>
         <ul className="flex items-center space-x-6">
           <li>
-            <Link
+            {/* <Link
               href="/#featured"
               className="hover:text-gray-300 transition-colors">
               Featured
-            </Link>
+            </Link> */}
           </li>
           <li>
-            <Link
+            {/* <Link
               href="/#latest"
               className="hover:text-gray-300 transition-colors">
               Latest Posts
-            </Link>
+            </Link> */}
           </li>
           <li>
-            <Link
+            {/* <Link
               href="/about"
               className="hover:text-gray-300 transition-colors">
               About
-            </Link>
+            </Link> */}
           </li>
           <li>
             <Link
-              href="/blog"
+              href="/products/inventory"
               className="hover:text-gray-300 transition-colors">
-              Blog
+              Inventory
             </Link>
           </li>
           <li>

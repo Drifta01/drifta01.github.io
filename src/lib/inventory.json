@@ -1,0 +1,44 @@
+{
+  "inventory": [
+    {
+      "id": 1,
+      "name": "Resistor 10k Ohm",
+      "part_number": "R10K",
+      "quantity": 100,
+      "supplier": "DigiKey",
+      "cost": 0.05
+    },
+    {
+      "id": 2,
+      "name": "Capacitor 100uF",
+      "part_number": "C100U",
+      "quantity": 50,
+      "supplier": "Mouser",
+      "cost": 0.1
+    },
+    {
+      "id": 3,
+      "name": "LED - Red",
+      "part_number": "LEDR",
+      "quantity": 200,
+      "supplier": "Adafruit",
+      "cost": 0.02
+    },
+    {
+      "id": 4,
+      "name": "Microcontroller ATmega328P",
+      "part_number": "ATM328",
+      "quantity": 25,
+      "supplier": "SparkFun",
+      "cost": 2.5
+    },
+    {
+      "id": 5,
+      "name": "M8 100mm Bolts",
+      "part_number": "BOLT8",
+      "quantity": 100,
+      "supplier": "McMaster-Carr",
+      "cost": 0.1
+    }
+  ]
+}

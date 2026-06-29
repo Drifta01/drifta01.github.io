@@ -9,9 +9,8 @@ const productsDirectory = path.join(process.cwd(), 'products');
 export type Product = {
     id: string;
     name: string;
-    price: string;
-    sku: string;
-    inventory: number;
+
+
     image: string;
     contentHtml?: string;
 };

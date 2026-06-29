@@ -4,12 +4,8 @@ name: "10 bank charger"
 image: "/images/IMG_0500.JPG"
 ---
 
-This is a detailed description of the **Sample Gadget**.
+---
 
-It has many features that make it stand out from the competition:
+ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-- Feature A
-- Feature B
-- Feature C
-
-It's built with the highest quality materials and is designed to last.
+---
