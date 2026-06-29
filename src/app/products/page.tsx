@@ -44,6 +44,11 @@ const ProductsPage = () => {
             />
             <h2 className="text-2xl font-bold">{name}</h2>
             <p className="text-xl text-gray-700">{price}</p>
+            <p className="text-gray-600 mt-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              euismod, nunc ut laoreet tincidunt, nunc nisl aliquam nunc, eget
+              aliquam nisl nunc vel nisl.
+            </p>
 
             <Link
               href={`/products/${id}`}
