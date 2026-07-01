@@ -33,16 +33,16 @@ const Header = () => {
           </li>
           <li>
             <Link
-              href="/products/inventory"
+              href="/products"
               className="hover:text-gray-300 transition-colors">
-              Inventory
+              Products
             </Link>
           </li>
           <li>
             <Link
-              href="/products"
+              href="/products/inventory"
               className="hover:text-gray-300 transition-colors">
-              Products
+              Inventory
             </Link>
           </li>
           <li>

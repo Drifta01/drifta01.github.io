@@ -1,28 +1,61 @@
-import { getAllProductIds, getProductData } from "@/lib/products";
+import { getProductById } from "@/lib/products-database";
+import { getInventoryItemByPartNumber } from "@/lib/database";
+import { notFound } from "next/navigation";
+import { buildProduct } from "./actions";
+import Link from "next/link";
 
-export async function generateStaticParams() {
-  const paths = getAllProductIds();
-  return paths;
-}
+export default async function ProductPage({
+  params,
+}: {
+  params: { id: string };
+}) {
+  const { id } = params;
+  const product = await getProductById(id);
 
-const ProductPage = async ({ params }: { params: { id: string } }) => {
-  const productData = await getProductData(params.id);
+  if (!product) {
+    notFound();
+  }
+
+  const requiredParts = await Promise.all(
+    product.required_parts.map(
+      async (part: { part_number: string; quantity: number }) => {
+        const inventoryItem = await getInventoryItemByPartNumber(
+          part.part_number,
+        );
+        return {
+          ...part,
+          name: inventoryItem?.name || "Part not found",
+        };
+      },
+    ),
+  );
 
   return (
-    <article className="bg-white p-8 rounded-lg shadow-md">
-      <img
-        src={productData.image}
-        alt={productData.name}
-        className="w-full h-96 object-cover mb-4"
-      />
-      <h1 className="text-4xl font-bold mb-2">{productData.name}</h1>
-      <p className="text-2xl text-gray-700 mb-4">{productData.price}</p>
-      <div
-        className="prose lg:prose-xl max-w-none"
-        dangerouslySetInnerHTML={{ __html: productData.contentHtml }}
-      />
-    </article>
+    <div className="container mx-auto px-4 py-8">
+      <h1 className="text-3xl font-bold mb-6">{product.name}</h1>
+      <h2 className="text-2xl font-bold mb-4">Parts Required</h2>
+      <ul>
+        {requiredParts.map((part) => (
+          <li key={part.part_number} className="mb-2">
+            {part.name} x {part.quantity}
+          </li>
+        ))}
+      </ul>
+      <div className="flex gap-4 mt-6">
+        <form action={buildProduct}>
+          <input type="hidden" name="productId" value={id} />
+          <button
+            type="submit"
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Build
+          </button>
+        </form>
+        <Link
+          href={`/products/${encodeURIComponent(id)}/edit`}
+          className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">
+          Edit
+        </Link>
+      </div>
+    </div>
   );
-};
-
-export default ProductPage;
+}

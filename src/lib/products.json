@@ -1,0 +1,116 @@
+{
+  "products": [
+    {
+      "id": "41005",
+      "name": "41005 SuperCharge",
+      "image": "/images/IMG_0991.JPG",
+      "required_parts": [
+        {
+          "part_number": "M8-100MM-BOLT",
+          "quantity": 4
+        },
+        {
+          "part_number": "M8-30MM-BOLT",
+          "quantity": 4
+        },
+        {
+          "part_number": "M8-60MM-BOLT",
+          "quantity": 4
+        },
+        {
+          "part_number": "M8-40MM-BOLT",
+          "quantity": 4
+        },
+        {
+          "part_number": "M8-EYE-BOLT",
+          "quantity": 0
+        },
+        {
+          "part_number": "M8-WASHER",
+          "quantity": 0
+        }
+      ]
+    },
+    {
+      "id": "3620",
+      "name": "3620A/S",
+      "image": "/images/1777465323793-2430A-S_Front_panel.jpeg",
+      "required_parts": [
+        {
+          "part_number": "M8-100MM-BOLT",
+          "quantity": 4
+        },
+        {
+          "part_number": "M8-30MM-BOLT",
+          "quantity": 4
+        },
+        {
+          "part_number": "M8-60MM-BOLT",
+          "quantity": 4
+        },
+        {
+          "part_number": "M8-40MM-BOLT",
+          "quantity": 4
+        },
+        {
+          "part_number": "M8-NUT",
+          "quantity": 4
+        },
+        {
+          "part_number": "M8-WASHER",
+          "quantity": 4
+        },
+        {
+          "part_number": "M8-LOCK-WASHER",
+          "quantity": 4
+        },
+        {
+          "part_number": "M8-LOCK-NUT",
+          "quantity": 4
+        },
+        {
+          "part_number": "M8-SPRING-WASHER",
+          "quantity": 4
+        },
+        {
+          "part_number": "M8-THREADED-ROD",
+          "quantity": 4
+        },
+        {
+          "part_number": "C100U",
+          "quantity": 2
+        },
+        {
+          "part_number": "ATM328",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "1782921157332",
+      "name": "41005",
+      "image": "/images/IMG_0991.jpg",
+      "required_parts": [
+        {
+          "part_number": "M8 30mm",
+          "quantity": "4"
+        },
+        {
+          "part_number": "M8-LOCK-NUT",
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "id": "1782922877993",
+      "name": "10 bank",
+      "image": "/images/IMG_0649 (1).JPG",
+      "required_parts": [
+        {
+          "part_number": "M8-30MM-BOLT",
+          "quantity": 4
+        }
+      ]
+    }
+  ]
+}
