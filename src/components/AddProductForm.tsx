@@ -2,7 +2,7 @@
 
 import { useState, useRef } from "react";
 import { createProduct } from "@/app/products/actions";
-import { InventoryItem } from "@/lib/database";
+import { InventoryItem } from "@/lib/products-database";
 
 export default function AddProductForm({
   inventoryItems,

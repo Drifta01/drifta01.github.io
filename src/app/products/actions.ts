@@ -1,59 +1,54 @@
 "use server";
 
 import { revalidatePath } from "next/cache";
-import { addProduct, updateProduct as updateProductInDatabase } from "@/lib/products-database";
-import { writeFile } from "fs/promises";
-import path from "path";
+import { addProduct } from "@/lib/products-database";
+import { S3Client, PutObjectCommand } from "@aws-sdk/client-s3";
+
+const s3Client = new S3Client({
+    region: process.env.AWS_REGION as string,
+    credentials: {
+        accessKeyId: process.env.AWS_ACCESS_KEY_ID as string,
+        secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY as string,
+    },
+});
+
+async function uploadImageToS3(
+    file: Buffer,
+    fileName: string,
+    productId: string,
+): Promise<string> {
+    const params = {
+        Bucket: process.env.AWS_BUCKET_NAME as string,
+        Key: `products/${productId}/${fileName}`,
+        Body: file,
+        ContentType: "image/jpeg",
+    };
+
+    const command = new PutObjectCommand(params);
+    await s3Client.send(command);
+
+    return `https://${process.env.AWS_BUCKET_NAME}.s3.${process.env.AWS_REGION}.amazonaws.com/products/${productId}/${fileName}`;
+}
 
 export async function createProduct(formData: FormData) {
     const name = formData.get("name") as string;
     const imageFile = formData.get("image") as File;
-    const required_parts = JSON.parse(formData.get("required_parts") as string);
+    const required_parts = JSON.parse(
+        formData.get("required_parts") as string,
+    );
 
-    const imagePath = `/images/${imageFile.name}`;
-    const imageFullPath = path.join(process.cwd(), "public", imagePath);
-
+    const productId = Date.now().toString();
     const buffer = Buffer.from(await imageFile.arrayBuffer());
-    await writeFile(imageFullPath, buffer);
+    const imageUrl = await uploadImageToS3(buffer, imageFile.name, productId);
 
     const newProduct = {
-        id: Date.now().toString(),
+        id: productId,
         name,
-        image: imagePath,
+        image_url: imageUrl,
         required_parts,
     };
 
     await addProduct(newProduct);
 
     revalidatePath("/products");
-}
-
-export async function updateProduct(id: string, formData: FormData) {
-    const name = formData.get("name") as string;
-    const imageFile = formData.get("image") as File;
-    const required_parts = JSON.parse(formData.get("required_parts") as string);
-
-    let imagePath: string | undefined = undefined;
-
-    if (imageFile && imageFile.size > 0) {
-        imagePath = `/images/${imageFile.name}`;
-        const imageFullPath = path.join(process.cwd(), "public", imagePath);
-        const buffer = Buffer.from(await imageFile.arrayBuffer());
-        await writeFile(imageFullPath, buffer);
-    }
-
-    const updatedProduct: any = {
-        id,
-        name,
-        required_parts,
-    };
-
-    if (imagePath) {
-        updatedProduct.image = imagePath;
-    }
-
-    await updateProductInDatabase(updatedProduct);
-
-    revalidatePath(`/products`);
-    revalidatePath(`/products/${id}`);
 }

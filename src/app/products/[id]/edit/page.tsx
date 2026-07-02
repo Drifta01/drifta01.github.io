@@ -1,6 +1,5 @@
-import { getProductById } from "@/lib/products-database";
+import { getProductById, getInventoryItems } from "@/lib/products-database";
 import EditProductForm from "../../../../components/EditProductForm";
-import { getInventoryItems } from "@/lib/database";
 
 export default async function EditProductPage({
   params,

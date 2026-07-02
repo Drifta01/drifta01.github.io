@@ -1,100 +1,578 @@
 {
-  "inventory": [
+  "Fasteners": [
     {
       "id": 1,
       "name": "M8 100mm Bolts",
       "part_number": "M8-100MM-BOLT",
-      "quantity": 34
+      "quantity": 34,
+      "price": 0.00
     },
     {
       "id": 2,
       "name": "M8 30mm Bolts",
       "part_number": "M8-30MM-BOLT",
-      "quantity": 12
+      "quantity": 8,
+      "price": 0.00
     },
     {
       "id": 3,
       "name": "M8 60mm Bolts",
-      "part_number": null,
-      "quantity": 100
+      "part_number": "M8-60MM-BOLT",
+      "quantity": 100,
+      "price": 0.00
     },
     {
       "id": 4,
       "name": "M8 40mm Bolts",
       "part_number": "M8-40MM-BOLT",
-      "quantity": 8
+      "quantity": 8,
+      "price": 0.00
     },
     {
       "id": 5,
       "name": "M8 Nuts",
       "part_number": "M8-NUT",
-      "quantity": 50
+      "quantity": 50,
+      "price": 0.00
     },
     {
       "id": 6,
       "name": "M8 Washers",
       "part_number": "M8-WASHER",
-      "quantity": 100
+      "quantity": 100,
+      "price": 0.00
     },
     {
       "id": 7,
       "name": "M8 Lock Washers",
       "part_number": "M8-LOCK-WASHER",
-      "quantity": 25
+      "quantity": 25,
+      "price": 0.00
     },
     {
       "id": 8,
       "name": "M8 Lock Nuts",
       "part_number": "M8-LOCK-NUT",
-      "quantity": 15
+      "quantity": 15,
+      "price": 0.00
     },
     {
       "id": 9,
       "name": "M8 Spring Washers",
       "part_number": "M8-SPRING-WASHER",
-      "quantity": 40
+      "quantity": 40,
+      "price": 0.00
     },
     {
       "id": 10,
       "name": "M8 Threaded Rod",
       "part_number": "M8-THREADED-ROD",
-      "quantity": 20
+      "quantity": 20,
+      "price": 0.00
     },
     {
       "id": 11,
       "name": "M8 Coupling Nuts",
       "part_number": "M8-COUPLING-NUT",
-      "quantity": 10
+      "quantity": 10,
+      "price": 0.00
     },
     {
       "id": 12,
       "name": "M8 Hex Head Bolts",
       "part_number": "M8-HEX-HEAD-BOLT",
-      "quantity": 5
+      "quantity": 5,
+      "price": 0.00
     },
     {
       "id": 13,
       "name": "M8 Carriage Bolts",
       "part_number": "M8-CARRIAGE-BOLT",
-      "quantity": 7
+      "quantity": 7,
+      "price": 0.00
     },
     {
       "id": 14,
       "name": "M8 Eye Bolts",
       "part_number": "M8-EYE-BOLT",
-      "quantity": 3
+      "quantity": 3,
+      "price": 0.00
     },
     {
       "id": 15,
       "name": "M8 U-Bolts",
       "part_number": "M8-U-BOLT",
-      "quantity": 6
+      "quantity": 6,
+      "price": 0.00
     },
     {
       "id": 16,
       "name": "M8 Flange Bolts",
       "part_number": "M8-FLANGE-BOLT",
-      "quantity": 9
+      "quantity": 9,
+      "price": 0.00
+    },
+    {
+      "id": 17,
+      "name": "M8X40mm Bolt",
+      "part_number": "FAS-M8X40MM-BOLT",
+      "quantity": 0,
+      "price": 0.58
+    },
+    {
+      "id": 18,
+      "name": "M6X12mm Bolt",
+      "part_number": "FAS-M6X12MM-BOLT",
+      "quantity": 0,
+      "price": 0.29
+    },
+    {
+      "id": 19,
+      "name": "M4x20mm Bolt",
+      "part_number": "FAS-M4X20MM-BOLT",
+      "quantity": 0,
+      "price": 0.09
+    },
+    {
+      "id": 20,
+      "name": "Self Tap Screws",
+      "part_number": "FAS-SELF-TAP-SCREWS",
+      "quantity": 0,
+      "price": 0.11
+    },
+    {
+      "id": 21,
+      "name": "M8 Nut",
+      "part_number": "FAS-M8-NUT",
+      "quantity": 0,
+      "price": 0.13
+    },
+    {
+      "id": 22,
+      "name": "M6 Nut",
+      "part_number": "FAS-M6-NUT",
+      "quantity": 0,
+      "price": 0.08
+    },
+    {
+      "id": 23,
+      "name": "M4 Nut",
+      "part_number": "FAS-M4-NUT",
+      "quantity": 0,
+      "price": 0.12
+    },
+    {
+      "id": 24,
+      "name": "M3 Nut",
+      "part_number": "FAS-M3-NUT",
+      "quantity": 0,
+      "price": 0.06
+    },
+    {
+      "id": 25,
+      "name": "M8 Washer Large",
+      "part_number": "FAS-M8-WASHER-LARGE",
+      "quantity": 0,
+      "price": 0.10
+    },
+    {
+      "id": 26,
+      "name": "M8 Washer Small",
+      "part_number": "FAS-M8-WASHER-SMALL",
+      "quantity": 0,
+      "price": 0.08
+    },
+    {
+      "id": 27,
+      "name": "M6 Washer Large",
+      "part_number": "FAS-M6-WASHER-LARGE",
+      "quantity": 0,
+      "price": 0.10
+    },
+    {
+      "id": 28,
+      "name": "M6 Washer Small",
+      "part_number": "FAS-M6-WASHER-SMALL",
+      "quantity": 0,
+      "price": 0.08
+    },
+    {
+      "id": 29,
+      "name": "M4 Washer Large",
+      "part_number": "FAS-M4-WASHER-LARGE",
+      "quantity": 0,
+      "price": 0.05
+    },
+    {
+      "id": 30,
+      "name": "M4 Washer Small",
+      "part_number": "FAS-M4-WASHER-SMALL",
+      "quantity": 0,
+      "price": 0.05
+    },
+    {
+      "id": 31,
+      "name": "M3 Washer Large",
+      "part_number": "FAS-M3-WASHER-LARGE",
+      "quantity": 0,
+      "price": 0.00
+    },
+    {
+      "id": 32,
+      "name": "M3 Washer small",
+      "part_number": "FAS-M3-WASHER-SMALL",
+      "quantity": 0,
+      "price": 0.00
+    },
+    {
+      "id": 33,
+      "name": "M8 Spring/Lock Washer",
+      "part_number": "FAS-M8-SPRING-LOCK-WASHER",
+      "quantity": 0,
+      "price": 0.10
+    },
+    {
+      "id": 34,
+      "name": "M6 Spring/Lock Washer",
+      "part_number": "FAS-M6-SPRING-LOCK-WASHER",
+      "quantity": 0,
+      "price": 0.08
+    },
+    {
+      "id": 35,
+      "name": "M4 Spring/Lock Washer",
+      "part_number": "FAS-M4-SPRING-LOCK-WASHER",
+      "quantity": 0,
+      "price": 0.05
+    },
+    {
+      "id": 36,
+      "name": "M3 Spring/Lock Washer",
+      "part_number": "FAS-M3-SPRING-LOCK-WASHER",
+      "quantity": 0,
+      "price": 0.00
+    },
+    {
+      "id": 37,
+      "name": "Rivots Long",
+      "part_number": "FAS-RIVOTS-LONG",
+      "quantity": 0,
+      "price": 0.05
+    },
+    {
+      "id": 38,
+      "name": "Rivots Short",
+      "part_number": "FAS-RIVOTS-SHORT",
+      "quantity": 0,
+      "price": 0.05
+    }
+  ],
+  "Clips": [
+    {
+      "id": 39,
+      "name": "Clip1",
+      "part_number": "CLI-CLIP1",
+      "quantity": 0,
+      "price": 5.00
+    },
+    {
+      "id": 40,
+      "name": "JLC2 Pair",
+      "part_number": "CLI-JLC2-PAIR",
+      "quantity": 0,
+      "price": 15.00
+    },
+    {
+      "id": 41,
+      "name": "JLC3 Pair",
+      "part_number": "CLI-JLC3-PAIR",
+      "quantity": 0,
+      "price": 8.50
+    },
+    {
+      "id": 42,
+      "name": "50 Amp Small",
+      "part_number": "CLI-50-AMP-SMALL",
+      "quantity": 0,
+      "price": 5.00
+    }
+  ],
+  "Lugs": [
+    {
+      "id": 43,
+      "name": "M8x35mm Lug",
+      "part_number": "LUG-M8X35MM",
+      "quantity": 0,
+      "price": 2.00
+    },
+    {
+      "id": 44,
+      "name": "M6X35mm Lug",
+      "part_number": "LUG-M6X35MM",
+      "quantity": 0,
+      "price": 2.00
+    },
+    {
+      "id": 45,
+      "name": "M8x25mm Lug",
+      "part_number": "LUG-M8X25MM",
+      "quantity": 0,
+      "price": 0.05
+    },
+    {
+      "id": 46,
+      "name": "ring terminal",
+      "part_number": "LUG-RING-TERMINAL",
+      "quantity": 0,
+      "price": 0.05
+    },
+    {
+      "id": 47,
+      "name": "Push Teminal",
+      "part_number": "LUG-PUSH-TERMINAL",
+      "quantity": 0,
+      "price": 0.05
+    }
+  ],
+  "Switches": [
+    {
+      "id": 48,
+      "name": "Battery Master Switch",
+      "part_number": "SWI-BATTERY-MASTER",
+      "quantity": 0,
+      "price": 25.00
+    },
+    {
+      "id": 49,
+      "name": "Neon",
+      "part_number": "SWI-NEON",
+      "quantity": 0,
+      "price": 1.00
+    },
+    {
+      "id": 50,
+      "name": "rocker",
+      "part_number": "SWI-ROCKER",
+      "quantity": 0,
+      "price": 1.00
+    },
+    {
+      "id": 51,
+      "name": "Toggle Switch",
+      "part_number": "SWI-TOGGLE",
+      "quantity": 0,
+      "price": 3.00
+    },
+    {
+      "id": 52,
+      "name": "H/Duty 11 pos",
+      "part_number": "SWI-HD-11POS",
+      "quantity": 0,
+      "price": 0.00
+    },
+    {
+      "id": 53,
+      "name": "Potentiometer Sml",
+      "part_number": "SWI-POT-SML",
+      "quantity": 0,
+      "price": 0.00
+    },
+    {
+      "id": 54,
+      "name": "Potentiometer Lge",
+      "part_number": "SWI-POT-LGE",
+      "quantity": 0,
+      "price": 0.00
+    }
+  ],
+  "Shunts": [
+    {
+      "id": 55,
+      "name": "Custom Shunt",
+      "part_number": "SHU-CUSTOM",
+      "quantity": 0,
+      "price": 3.00
+    },
+    {
+      "id": 56,
+      "name": "S/Steel Element",
+      "part_number": "SHU-SSTEEL-ELEMENT",
+      "quantity": 0,
+      "price": 10.00
+    },
+    {
+      "id": 57,
+      "name": "Carbon Plates",
+      "part_number": "SHU-CARBON-PLATES",
+      "quantity": 0,
+      "price": 0.00
+    },
+    {
+      "id": 58,
+      "name": "Digital",
+      "part_number": "SHU-DIGITAL",
+      "quantity": 0,
+      "price": 0.00
+    },
+    {
+      "id": 59,
+      "name": "Preset",
+      "part_number": "SHU-PRESET",
+      "quantity": 0,
+      "price": 0.00
+    }
+  ],
+  "Meters": [
+    {
+      "id": 60,
+      "name": "Meter Scales",
+      "part_number": "MET-SCALES",
+      "quantity": 0,
+      "price": 6.00
+    },
+    {
+      "id": 61,
+      "name": "SD80",
+      "part_number": "MET-SD80",
+      "quantity": 0,
+      "price": 16.00
+    },
+    {
+      "id": 62,
+      "name": "SD100",
+      "part_number": "MET-SD100",
+      "quantity": 0,
+      "price": 0.00
+    },
+    {
+      "id": 63,
+      "name": "Digital",
+      "part_number": "MET-DIGITAL",
+      "quantity": 0,
+      "price": 0.00
+    }
+  ],
+  "Cables": [
+    {
+      "id": 64,
+      "name": "16mm",
+      "part_number": "CAB-16MM",
+      "quantity": 0,
+      "price": 12.00
+    },
+    {
+      "id": 65,
+      "name": "35mm",
+      "part_number": "CAB-35MM",
+      "quantity": 0,
+      "price": 22.00
+    },
+    {
+      "id": 66,
+      "name": "50mm",
+      "part_number": "CAB-50MM",
+      "quantity": 0,
+      "price": 35.00
+    },
+    {
+      "id": 67,
+      "name": "Braid 5mm",
+      "part_number": "CAB-BRAID-5MM",
+      "quantity": 0,
+      "price": 1.00
+    },
+    {
+      "id": 68,
+      "name": "Braid 10mm",
+      "part_number": "CAB-BRAID-10MM",
+      "quantity": 0,
+      "price": 2.00
+    },
+    {
+      "id": 69,
+      "name": "Braid 15mm",
+      "part_number": "CAB-BRAID-15MM",
+      "quantity": 0,
+      "price": 3.00
+    },
+    {
+      "id": 70,
+      "name": "PCB Wiring",
+      "part_number": "CAB-PCB-WIRING",
+      "quantity": 0,
+      "price": 10.00
+    },
+    {
+      "id": 71,
+      "name": "AC",
+      "part_number": "CAB-AC",
+      "quantity": 0,
+      "price": 0.00
+    },
+    {
+      "id": 72,
+      "name": "Internal",
+      "part_number": "CAB-INTERNAL",
+      "quantity": 0,
+      "price": 5.00
+    }
+  ],
+  "Cases": [
+    {
+      "id": 73,
+      "name": "Ten Panel",
+      "part_number": "CAS-TEN-PANEL",
+      "quantity": 0,
+      "price": 120.00
+    },
+    {
+      "id": 74,
+      "name": "BT450",
+      "part_number": "CAS-BT450",
+      "quantity": 0,
+      "price": 30.00
+    },
+    {
+      "id": 75,
+      "name": "RC3010",
+      "part_number": "CAS-RC3010",
+      "quantity": 0,
+      "price": 23.00
+    },
+    {
+      "id": 76,
+      "name": "2010",
+      "part_number": "CAS-2010",
+      "quantity": 0,
+      "price": 64.00
+    },
+    {
+      "id": 77,
+      "name": "62425",
+      "part_number": "CAS-62425",
+      "quantity": 0,
+      "price": 76.00
+    },
+    {
+      "id": 78,
+      "name": "62409",
+      "part_number": "CAS-62409",
+      "quantity": 0,
+      "price": 0.00
+    },
+    {
+      "id": 79,
+      "name": "62455",
+      "part_number": "CAS-62455",
+      "quantity": 0,
+      "price": 0.00
+    },
+    {
+      "id": 80,
+      "name": "161000",
+      "part_number": "CAS-161000",
+      "quantity": 0,
+      "price": 72.00
     }
   ]
 }

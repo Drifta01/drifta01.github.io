@@ -1,9 +1,9 @@
 {
   "pages": {
-    "/page": [
+    "/inventory/add/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
+      "static/chunks/app/inventory/add/page.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
@@ -25,6 +25,11 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/products/[id]/edit/page.js"
+    ],
+    "/inventory/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/inventory/page.js"
     ]
   }
 }

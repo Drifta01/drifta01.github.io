@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -21,7 +22,13 @@ export default function Home() {
               className="block mt-4 text-blue-500 hover:underline"
               href="/products">
               {""}
-              <img src="/images/IMG_E1902 (1).JPG" alt="Lindford" width={400} />
+              <Image
+                src="/images/IMG_E1902 (1).JPG"
+                alt="Lindford"
+                width={400}
+                height={200}
+                className="w-full h-48 object-cover mb-4"
+              />
             </Link>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md">

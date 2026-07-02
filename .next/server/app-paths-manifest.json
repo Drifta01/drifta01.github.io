@@ -1,6 +1,7 @@
 {
-  "/page": "app/page.js",
+  "/inventory/add/page": "app/inventory/add/page.js",
   "/products/page": "app/products/page.js",
+  "/products/[id]/edit/page": "app/products/[id]/edit/page.js",
   "/products/[id]/page": "app/products/[id]/page.js",
-  "/products/[id]/edit/page": "app/products/[id]/edit/page.js"
+  "/inventory/page": "app/inventory/page.js"
 }

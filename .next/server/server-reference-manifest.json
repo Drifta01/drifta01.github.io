@@ -1,5 +1,13 @@
 {
   "node": {
+    "500e7376655f9f3ef312ada40432a2a7361c4e94": {
+      "workers": {
+        "app/inventory/add/page": "(action-browser)/./node_modules/.pnpm/next@14.2.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Ccarlg%5C%5Crepos%5C%5Cdrifta01.github.io%5C%5Csrc%5C%5Capp%5C%5Cproducts%5C%5Cinventory%5C%5Cactions.ts%22%2C%5B%22createInventoryItem%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/inventory/add/page": "action-browser"
+      }
+    },
     "70da83f062246a3b453b5fa5e0882ccb871bd707": {
       "workers": {
         "app/products/[id]/page": "(rsc)/./node_modules/.pnpm/next@14.2.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Ccarlg%5C%5Crepos%5C%5Cdrifta01.github.io%5C%5Csrc%5C%5Capp%5C%5Cproducts%5C%5C%5Bid%5D%5C%5Cactions.ts%22%2C%5B%22buildProduct%22%5D%5D%5D&__client_imported__=!"
@@ -8,17 +16,9 @@
         "app/products/[id]/page": "rsc"
       }
     },
-    "89cc991259f66c59b522c52b8a95dfe52e0eaf30": {
+    "18592e5f05829f084a5caa4b22f4d837cf635458": {
       "workers": {
-        "app/products/[id]/edit/page": "(action-browser)/./node_modules/.pnpm/next@14.2.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Ccarlg%5C%5Crepos%5C%5Cdrifta01.github.io%5C%5Csrc%5C%5Capp%5C%5Cproducts%5C%5Cactions.ts%22%2C%5B%22updateProduct%22%2C%22createProduct%22%5D%5D%5D&__client_imported__=true!"
-      },
-      "layer": {
-        "app/products/[id]/edit/page": "action-browser"
-      }
-    },
-    "c0f6fe150f1d145f16425315568a464dfcb2e05b": {
-      "workers": {
-        "app/products/[id]/edit/page": "(action-browser)/./node_modules/.pnpm/next@14.2.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Ccarlg%5C%5Crepos%5C%5Cdrifta01.github.io%5C%5Csrc%5C%5Capp%5C%5Cproducts%5C%5Cactions.ts%22%2C%5B%22updateProduct%22%2C%22createProduct%22%5D%5D%5D&__client_imported__=true!"
+        "app/products/[id]/edit/page": "(action-browser)/./node_modules/.pnpm/next@14.2.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Ccarlg%5C%5Crepos%5C%5Cdrifta01.github.io%5C%5Csrc%5C%5Ccomponents%5C%5Cactions.ts%22%2C%5B%22updateProductAction%22%5D%5D%5D&__client_imported__=true!"
       },
       "layer": {
         "app/products/[id]/edit/page": "action-browser"
@@ -26,5 +26,5 @@
     }
   },
   "edge": {},
-  "encryptionKey": "viFVK+4Crgu7dX4ZDJRTv5dtEjUGa0kUWkWItmgMMIY="
+  "encryptionKey": "5786p2NknURSk3Z8fkOkztvM10HMarq56DpbIHnZvls="
 }
