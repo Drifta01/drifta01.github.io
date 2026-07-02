@@ -5,8 +5,10 @@ import path from 'path';
 export interface Product {
     id: string;
     name: string;
-    image_url: string;
+    image: string;
     required_parts: { part_number: string; quantity: number }[];
+    image_url: string;
+
 }
 
 export interface InventoryItem {
@@ -45,7 +47,7 @@ export async function updateProduct(updatedProduct: Partial<Product> & { id: str
     products[index] = {
         ...existingProduct,
         ...updatedProduct,
-        image_url: updatedProduct.image_url || existingProduct.image_url,
+        image: updatedProduct.image || existingProduct.image,
     };
     await writeProducts(products);
 }

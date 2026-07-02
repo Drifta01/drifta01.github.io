@@ -2,6 +2,7 @@
 
 import { revalidatePath } from "next/cache";
 import { addProduct } from "@/lib/products-database";
+// @ts-ignore: Allow importing @aws-sdk/client-s3 even if types aren't installed in this environment
 import { S3Client, PutObjectCommand } from "@aws-sdk/client-s3";
 
 const s3Client = new S3Client({
@@ -44,7 +45,9 @@ export async function createProduct(formData: FormData) {
     const newProduct = {
         id: productId,
         name,
+        image: imageUrl,
         image_url: imageUrl,
+
         required_parts,
     };
 

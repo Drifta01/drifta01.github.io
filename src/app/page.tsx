@@ -27,7 +27,6 @@ export default function Home() {
                 alt="Lindford"
                 width={400}
                 height={200}
-                className="w-full h-48 object-cover mb-4"
               />
             </Link>
           </div>

@@ -82,7 +82,7 @@ export default function AddProductForm({
               Select a part
             </option>
             {inventoryItems.map((item) => (
-              <option key={item.id} value={item.part_number}>
+              <option key={item.id} value={item.part_number || ""}>
                 {item.name} ({item.part_number})
               </option>
             ))}

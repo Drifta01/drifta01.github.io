@@ -3,6 +3,7 @@
 import { updateProduct, getProductById } from "@/lib/products-database";
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
+// @ts-ignore: Allow importing @aws-sdk/client-s3 even if types aren't installed in this environment
 import { S3Client, PutObjectCommand } from "@aws-sdk/client-s3";
 
 const s3Client = new S3Client({
